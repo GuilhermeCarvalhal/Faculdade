@@ -1,0 +1,38 @@
+Algoritmo "1"
+
+
+Var
+   mat : vetor[1..3,1..4] de caracter
+   c, l : inteiro
+
+
+
+Inicio
+
+   para l de 1 ate 3 faca
+      para c de 1 ate 4 faca
+         se (l = 1) entao
+            escreval("Digite o nome da pessoa na posição", c)
+            leia(mat[1,c])
+         fimse
+         se (l = 2) entao
+            escreval("Digite o email da pessoa na posição", c)
+            leia(mat[2,c])
+         fimse
+         se (l = 3) entao
+            escreval("Digite o telefone da pessoa na posição", c)
+            leia(mat[3,c])
+         fimse
+
+      fimpara
+   fimpara
+
+   para l de 1 ate 3 faca
+      para c de 1 ate 4 faca
+         escreva(mat[l,c], " | ")
+      fimpara
+      escreval("")
+   fimpara
+
+
+Fimalgoritmo
