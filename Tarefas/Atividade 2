@@ -1,0 +1,25 @@
+Algoritmo "2"
+
+
+Var
+   mat : vetor[1..10,1..10] de inteiro
+   c, l : inteiro
+
+
+Inicio
+
+   para l de 1 ate 10 faca
+      para c de 1 ate 10 faca
+         mat[l,c] <- randi(10)
+      fimpara
+   fimpara
+
+   para l de 1 ate 10 faca
+      para c de 1 ate 10 faca
+         escreva(mat[l,c])
+      fimpara
+      escreval("")
+   fimpara
+
+
+Fimalgoritmo
