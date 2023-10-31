@@ -1,0 +1,51 @@
+Algoritmo "6"
+//O cinema do IFRS possui 150 poltronas, dispostas em 15 filas de 10 poltronas cada. Crie um
+//programa que simule a venda de ingressos para uma sessão de “Avengers: Endgame”, sendo
+//representado da seguinte maneira: 0 - poltrona vazia | 1 - pagante inteira | 2 - pagante meia
+//(preencha aleatoriamente os valores). Depois, mostre a ocupação das poltronas e a quantidade de
+//cada tipo. Sabendo que o ingresso custa R$ 12,00, informe o valor apurado na sessão.
+
+
+Var
+   mat : vetor[1..10,1..15] de inteiro
+   c, l : inteiro
+   ingresso : vetor[1..3] de inteiro   // 1 - Vazia, 2 - Meia, 3 - Inteira
+   somatotal : inteiro
+
+Inicio
+
+   para l de 1 ate 10 faca
+      para c de 1 ate 15 faca
+         mat[l,c] <- randi(3)
+         se mat[l,c] = 0 entao
+            ingresso[1] <- ingresso[1] + 1
+         senao
+            se mat[l,c] = 1 entao
+               ingresso[2] <- ingresso[2] + 1
+            senao
+               ingresso[3] <- ingresso[3] + 1
+            fimse
+         fimse
+      fimpara
+   fimpara
+
+   para l de 1 ate 10 faca
+      para c de 1 ate 15 faca
+         escreva(" | ", mat[l,c], " | ")
+      fimpara
+      escreval("")
+   fimpara
+   
+   escreval("=================================")
+   escreval()
+   escreval("A quantidade total de poltronas vazias é de: ", ingresso[1])
+   escreval("A quantidade total de pagantes inteiras é de: ", ingresso[2])
+   escreval("A quantidade total de pagantes meias é de: ", ingresso[3])
+   escreval()
+   escreval("=================================")
+   escreval()
+   
+  escreval("O valor apurado na sessão de Avengers: Endgame foi de: ", (ingresso[2] * 12) + (ingresso[3] * 6))
+
+
+Fimalgoritmo
