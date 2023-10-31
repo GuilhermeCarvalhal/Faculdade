@@ -1,5 +1,5 @@
 Algoritmo "2"
-
+//Crie uma matriz 10x10 de inteiros, preencha com valores aleatórios e mostre a matriz na tela.
 
 Var
    mat : vetor[1..10,1..10] de inteiro
