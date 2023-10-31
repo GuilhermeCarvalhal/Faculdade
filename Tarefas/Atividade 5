@@ -1,0 +1,60 @@
+Algoritmo "4"
+//Crie uma matriz 4x4 de inteiros e solicite que o usuário preencha com valores. Solicite um valor ao
+//usuário e multiplique cada elemento da matriz por esse valor. Mostre a nova matriz
+
+
+Var
+   mat : vetor[1..4,1..4] de inteiro
+   c, l : inteiro
+   x : inteiro
+
+
+
+Inicio
+
+   para l de 1 ate 4 faca
+      para c de 1 ate 4 faca
+         se (l = 1) entao
+            escreval("Digite um valor para a posição ", c, " da linha 1")
+            leia(mat[1,c])
+         fimse
+         se (l = 2) entao
+            escreval("Digite um valor para a posição ", c, " da linha 2")
+            leia(mat[2,c])
+         fimse
+         se (l = 3) entao
+            escreval("Digite um valor para a posição ", c, " da linha 3")
+            leia(mat[3,c])
+         fimse
+         se (l = 4) entao
+            escreval("Digite um valor para a posição ", c, " da linha 4")
+            leia(mat[4,c])
+         fimse
+
+
+      fimpara
+   fimpara
+
+
+   para l de 1 ate 4 faca
+      para c de 1 ate 4 faca
+
+         escreva(" | ", mat[l,c], " | ")
+      fimpara
+      escreval("")
+   fimpara
+
+
+   escreval("Digite um valor para multiplicar pela matriz: ")
+   leia(x)
+
+   para l de 1 ate 4 faca
+      para c de 1 ate 4 faca
+         mat[l,c] <- mat[l,c] * x
+         escreva(" | ", mat[l,c], " | ")
+      fimpara
+      escreval("")
+   fimpara
+
+
+Fimalgoritmo
