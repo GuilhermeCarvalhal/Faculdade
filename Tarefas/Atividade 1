@@ -1,5 +1,5 @@
 Algoritmo "1"
-
+//Crie uma matriz 3x3 de inteiros, preencha com valores e exiba a matriz na tela.
 
 Var
    mat : vetor[1..3,1..3] de inteiro
