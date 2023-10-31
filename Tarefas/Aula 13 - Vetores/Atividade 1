@@ -1,0 +1,36 @@
+Algoritmo "1"
+
+//Fazer um algoritmo que leia um vetor de 10 posições de
+//números inteiros e mostre somente os positivos não-nulos
+//(maiores que zero). Obs: o vetor não deve conter espaços
+//(posições) vazios.
+
+var
+   vet : vetor[1..10] de inteiro
+   indice : inteiro
+
+
+inicio
+
+   vet[1] <- 0
+
+   para indice de 1 ate 10 faca
+      escreval("Digite um número inteiro para a posição", indice)
+      leia(vet[indice])
+
+   fimpara
+
+   escreval("Os números positivos não nulos do vetor são: ")
+
+   para indice de 1 ate 10 faca
+
+      se vet[indice] > 0 entao
+         escreva(" | ", vet[indice], " |")
+
+      fimse
+   fimpara
+
+fimalgoritmo
+
+
+
