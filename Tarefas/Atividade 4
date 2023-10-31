@@ -1,0 +1,51 @@
+Algoritmo "4"
+//Um prédio de 4 andares possui 6 apartamentos em cada andar. Crie um programa que registre a
+//quantidade de moradores de cada apartamento e no fim mostre o total de moradores.
+
+
+Var
+   mat : vetor[1..4,1..6] de inteiro
+   c, l : inteiro
+   somatotal : inteiro
+
+Inicio
+
+   para l de 1 ate 4 faca
+      para c de 1 ate 6 faca
+         se (l = 1) entao
+            escreval("Digite a quantidade de moradores do primeiro andar no apto ", c)
+            leia(mat[1,c])
+         fimse
+         se (l = 2) entao
+            escreval("Digite a quantidade de moradores do segundo andar no apto ", c)
+            leia(mat[2,c])
+         fimse
+         se (l = 3) entao
+            escreval("Digite a quantidade de moradores do terceiro andar no apto ", c)
+            leia(mat[3,c])
+         fimse
+         se (l = 4) entao
+            escreval("Digite a quantidade de moradores do quarta andar no apto ", c)
+            leia(mat[4,c])
+         fimse
+         
+         somatotal <- somatotal + mat[l,c]
+
+      fimpara
+   fimpara
+
+   escreval("Andares | Apto 1 | Apto 2 | Apto 3 | Apto 4 | Apto 5 | Apto 6 |")
+
+   para l de 1 ate 4 faca
+   escreva("Andar ", l)
+      para c de 1 ate 6 faca
+
+         escreva(" | ", mat[l,c], " | ")
+      fimpara
+      escreval("")
+   fimpara
+
+   escreval("============================================")
+   escreval("A soma total de moradores é: ", somatotal)
+
+Fimalgoritmo
