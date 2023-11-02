@@ -1,0 +1,31 @@
+Algoritmo "semnome"
+//Crie um registro chamado Carro, que possui uma variável chamada ano, do tipo inteiro, uma variável chamada
+//quilometragem, também do tipo inteiro, e uma variável do tipo caractere para armazenar o modelo:
+//a. Crie um vetor do registro chamado Carro
+// No registro do 1º elemento do vetor, armazene os seguintes atributos do carro:
+//i. Ano: 2013
+//ii. Quilometragem: 50000
+//iii. Modelo: Prisma
+tipo
+Carros = registro
+ano : inteiro
+quilometragem : inteiro
+modelo : caracter
+
+
+fimregistro
+
+Var
+Carro : vetor[1..10] de Carros
+i : inteiro
+
+Inicio
+
+Carro[1].ano <- 2013
+Carro[1].quilometragem <- 50000
+Carro[1].modelo <- "Prisma"
+
+
+
+
+Fimalgoritmo
