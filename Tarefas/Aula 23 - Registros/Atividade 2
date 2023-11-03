@@ -1,0 +1,64 @@
+// Dado que para cada aluno de uma turma de 10 alunos se tenha: número de matrícula, nome e média final, faça
+//um algoritmo que:
+//Imprime o nome e a média final de cada aluno;
+//Imprime a média geral da turma;
+
+Algoritmo "2"
+
+tipo
+
+   turmas = registro
+
+      media : real
+      nome : caracter
+      matricula : inteiro
+
+   fimregistro
+
+var
+   i : inteiro
+   turma : vetor[1..10] de turmas
+   mg : real
+
+inicio
+
+   para i de 1 ate 10 faca
+
+      escreval("Digite o nome do aluno na posição", i)
+      leia(turma[i].nome)
+
+      escreval("Digite a média do aluno da posição", i)
+      leia(turma[i].media)
+
+      turma[i].matricula <- randi(201)
+
+
+
+   fimpara
+
+   escreva("Nome   | Média Final  | Matrícula")
+   escreval("")
+
+
+   para i de 1 ate 10 faca
+      escreva (turma[i].nome, " | ", turma[i].media, " | ", turma[i].matricula)
+      escreval("")
+      mg <- turma[i].media + mg
+
+   fimpara
+
+   escreval("")
+
+   escreval("A média geral da turma é: ", (mg/10))
+
+
+
+
+fimalgoritmo
+
+
+
+
+
+
+
