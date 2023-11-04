@@ -1,0 +1,35 @@
+Algoritmo "3"
+
+//Escreva um algoritmo que leia um vetor inteiro de 20
+//posições (vetor 1). Verifique os valores do vetor 1 e
+//modifique um segundo vetor (vetor 2), atribuindo o valor “1”
+//ao vetor 2 quando houver um valor nulo no primeiro vetor.
+//Ao fim, imprima os dois vetores.
+
+var
+   vet : vetor[1..20] de inteiro
+   vet2 : vetor[1..20] de inteiro
+   i : inteiro
+
+inicio
+
+
+   para i de 1 ate 20 faca
+      escreval("Digite um número para a posição", i)
+      leia(vet[i])
+
+      se vet[i] <= 0 entao
+         vet2[i] <- 1
+      fimse
+   fimpara
+
+   para i de 1 ate 20 faca
+
+      se vet[i] > 0 entao
+         escreval(vet[i])
+      senao
+         escreval(vet2[i])
+      fimse
+   fimpara
+
+fimalgoritmo

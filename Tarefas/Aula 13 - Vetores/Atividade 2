@@ -1,0 +1,37 @@
+Algoritmo "2"
+
+//Escreva um algoritmo que leia um vetor de 15 elementos
+//inteiros. Encontre e imprima na tela o menor elemento,
+//assim como sua posição no vetor
+
+
+var
+   vet : vetor[1..15] de inteiro
+   i, menor, posicao : inteiro
+
+
+inicio
+
+
+   para i de 1 ate 15 faca
+
+      escreval("Digite um número inteiro para a posição", i)
+      leia(vet[i])
+
+   fimpara
+
+   menor <- vet[1]
+   posicao <- 1
+
+   para i de 2 ate 15 faca
+      se vet[i] < menor entao
+         menor <- vet[i]
+         posicao <- i
+      fimse
+
+   fimpara
+
+
+   escreval("O menor número é: ", menor, " e se localiza na posição: ", posicao)
+
+fimalgoritmo
