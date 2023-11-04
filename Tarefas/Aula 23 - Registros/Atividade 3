@@ -1,0 +1,87 @@
+Algoritmo "3"
+
+//Crie uma agenda de contatos, ou seja, um registro chamado Contato, contendo nome e telefone. Crie um
+//algoritmo que permite cadastrar, remover e buscar contatos. A busca deve ser baseada no nome da pessoa. Para
+//implementar essa coleção de registros, utilize um vetor de 50 posições (capacidade máxima de contatos). Questão
+//a se perguntar antes de implementar: Como saber se determinado contato do vetor está livre pra receber um novo
+//contato?
+
+tipo
+
+   Contato = registro
+
+      nome : caracter
+      telefone : inteiro
+      cadastrado : logico
+
+   fimregistro
+
+procedimento cadastrar (cont : caracter):
+var
+
+inicio
+   para i de 1 ate 3 faca
+
+      se Agenda[i].cadastrado = falso entao
+         escreval("Digite um nome para o novo contato:")
+         leia(Agenda[i].nome)
+
+         escreval("Digite o telefone do novo contato: ")
+         leia(Agenda[i].telefone)
+
+         escreval("Contato registrado na posição", i)
+
+         Agenda[i].cadastrado <- verdadeiro
+         espaco <- espaco + 1
+      fimse
+
+      se espaco = 3 entao
+         escreval("Sua agenda está lotada, delete algum contato para registrar um novo.")
+      fimse
+
+fimprocedimento
+
+funcao menus (botao : inteiro): inteiro
+
+inicio
+
+   escreval("========================================")
+   escreval("")
+   escreval("Bem vindo a sua agenda de contatos.")
+   escreval("")
+   escreval("Para cadastrar um novo contato, digite 1")
+   escreval("Para remover um contato, digite 2")
+   escreval("Para buscar por um contato, digite 3")
+   escreval("Para fechar sua lista de contatos, digite 4")
+   escreval("")
+   escreval("========================================")
+
+   leia(botao)
+
+   retorne botao
+
+fimfuncao
+
+
+var
+
+   Agenda : vetor[1..50] de Contato
+
+   i, menu, espaco : inteiro
+
+
+inicio
+
+   enquanto menu <> 4 faca
+
+      menu <- menus(0)
+
+      se menu = 1 entao
+         cadastrar("novo")
+      fimse
+
+
+
+   fimenquanto
+fimalgoritmo
+
