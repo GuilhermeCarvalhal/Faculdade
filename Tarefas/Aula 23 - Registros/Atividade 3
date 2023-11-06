@@ -16,11 +16,16 @@ tipo
 
    fimregistro
 
-procedimento cadastrar (cont : caracter):
+   procedimento cadastrar (cont : caracter):
 var
 
 inicio
-   para i de 1 ate 3 faca
+   para i de 1 ate 50 faca
+   
+   se espaco = 50 entao
+      escreval("Sua agenda está lotada, delete algum contato para registrar um novo.")
+      interrompa
+   fimse
 
       se Agenda[i].cadastrado = falso entao
          escreval("Digite um nome para o novo contato:")
@@ -33,13 +38,61 @@ inicio
 
          Agenda[i].cadastrado <- verdadeiro
          espaco <- espaco + 1
+         interrompa
       fimse
 
-      se espaco = 3 entao
-         escreval("Sua agenda está lotada, delete algum contato para registrar um novo.")
-      fimse
+   fimpara
+
 
 fimprocedimento
+
+procedimento remover (remo : caracter):
+var
+
+inicio
+   escreval("Digite exatamente o nome do contato que deseja remover: ")
+   leia(remo)
+   para i de 1 ate 50 faca
+      se remo = Agenda[i].nome entao
+
+         Agenda[i].nome <- ""
+
+         Agenda[i].telefone <- 0
+
+         escreval("O contato referente a posição ", i, " foi apagado")
+
+         Agenda[i].cadastrado <- falso
+         espaco <- espaco - 1
+         interrompa
+      fimse
+
+   fimpara
+
+fimprocedimento
+
+
+procedimento procurar (search : caracter):
+var
+inicio
+   escreval("Digite exatamente o nome do contato que deseja encontrar: ")
+   leia(search)
+   para i de 1 ate 50 faca
+      se (search = Agenda[i].nome) E (Agenda[i].cadastrado = verdadeiro) entao
+
+         escreval("Aqui está o contato desejado: ")
+         escreval("Posição: ", i)
+         escreval("Nome: ", Agenda[i].nome)
+         escreval("Telefone: ", Agenda[i].telefone)
+
+         interrompa
+      fimse
+
+   fimpara
+
+fimprocedimento
+
+
+
 
 funcao menus (botao : inteiro): inteiro
 
@@ -70,6 +123,7 @@ var
    i, menu, espaco : inteiro
 
 
+
 inicio
 
    enquanto menu <> 4 faca
@@ -80,8 +134,22 @@ inicio
          cadastrar("novo")
       fimse
 
+      se menu = 2 entao
+         remover("")
+      fimse
+
+      se menu = 3 entao
+         procurar("")
+      fimse
+
+      se menu = 4 entao
+         escreval("Fechando agenda...")
+      fimse
+
 
 
    fimenquanto
-fimalgoritmo
 
+
+
+fimalgoritmo
