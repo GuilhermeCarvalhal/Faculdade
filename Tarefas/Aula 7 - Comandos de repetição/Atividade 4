@@ -1,7 +1,7 @@
-Algoritmo "3"
+Algoritmo "4"
 
-//Crie um programa que lê dois números inteiros e imprime todos os números pares entre eles.
-//Assuma que o segundo número é maior que o primeiro.
+//Crie um programa que lê dois números inteiros e imprimir todos os números ímpares entre eles.
+//Suponha que o segundo número é maior que o primeiro.
 
 var
    x, y, i : inteiro
@@ -21,8 +21,8 @@ inicio
    x <- x + 1
 
    para i de x ate y faca
-      se i mod 2 = 0 entao
-         escreval("Par encontrado: ", i)
+      se i mod 2 <> 0 entao
+         escreval("Ímpar encontrado: ", i)
       fimse
    fimpara
 

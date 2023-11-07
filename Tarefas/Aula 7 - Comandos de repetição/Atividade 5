@@ -1,0 +1,21 @@
+Algoritmo "5"
+
+//Ler um número inteiro e escrever o valor da soma de todos os números digitados até o momento,
+//até que seja digitado um número negativo.
+
+var
+   x, s : inteiro
+
+inicio
+
+   enquanto x >= 0 faca
+      escreval("Digite um número inteiro: ")
+      leia(x)
+      se x < 0 entao
+         interrompa
+      fimse
+      s <- x + s
+      escreval("A soma dos números digitados até agora é equivalente ao valor: ", s)
+   fimenquanto
+
+fimalgoritmo

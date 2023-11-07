@@ -1,0 +1,20 @@
+Algoritmo "2"
+
+//Crie um programa para ler 5 idades, calcular a média entre as idades e informar a média ao
+//usuário
+
+var
+
+s, i, idade : inteiro
+
+inicio
+
+para i de 1 ate 5 faca
+escreval("Digite a idade da pessoa número", i)
+leia(idade)
+s <- s + idade
+fimpara
+
+escreval("A média entre as idades escolhidas é de: ", (s/5))
+
+fimalgoritmo

@@ -1,0 +1,40 @@
+Algoritmo "1"
+
+//Crie um programa que lê um número inteiro, maior que 0, e imprime a soma entre todos os
+//números menores que o número lido, até chegar em 0. Exemplo: usuário informa o numero 10 -> 9
+//+ 8 + 7 + ... + 1
+
+funcao somatorio (s : inteiro): inteiro
+var
+   resultado : inteiro
+inicio
+
+
+
+   se s = 0 entao
+      retorne resultado <- 0
+   senao
+      resultado <- s + somatorio(s - 1)
+      retorne resultado
+   fimse
+
+fimfuncao
+
+
+var
+   x, sub : inteiro
+
+inicio
+
+   enquanto x <= 0 faca
+      escreval("Digite um número inteiro maior que 0: ")
+      leia(x)
+   fimenquanto
+   
+   
+   x <- x - 1
+
+
+   escreval("O somatório do número escolhido é de ", somatorio(x))
+
+fimalgoritmo

@@ -1,0 +1,40 @@
+Algoritmo "3"
+
+//3. Crie um programa que lê um número não-negativo (> 0) do usuário, e calcula a operação fatorial
+//para aquele número.
+//- Com estruturas de repetição (PARA, ENQUANTO...)
+//- Com chamadas recursivas
+//- OBS: Fatorial de 5 -> 5! = 5 * 4 * 3 * ... * 2 * 1
+
+
+funcao fatorial(numero: inteiro) : inteiro
+var
+   resultado: inteiro
+
+inicio
+   se numero = 0 entao
+      resultado <- 1
+   senão
+      resultado <- numero * fatorial(numero - 1)
+   fimse
+
+   retorne resultado
+fimfuncao
+
+var
+   x, i, r: inteiro
+
+inicio
+
+   enquanto x <= 0 faca
+      escreval("Digite um número maior que 0: ")
+      leia(x)
+   fimenquanto
+
+
+   r <- fatorial(x)
+
+   escreval("A operação fatorial de ", x, " é igual a ", r)
+
+
+fimalgoritmo

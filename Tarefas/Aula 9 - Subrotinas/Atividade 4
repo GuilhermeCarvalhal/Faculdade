@@ -1,0 +1,106 @@
+Algoritmo "4"
+
+//Faça a implementação de uma calculadora no VisuAlg. Considere que o usuário deve informar a
+//operação desejada e 2 números inteiros. Implemente os procedimentos e funções para:
+//- Mostrar o menu (selecionar opção);
+//- Somar;
+//- Subtrair;
+//- Multiplicar;
+//- Dividir.
+
+funcao soma (s1, s2 : inteiro): inteiro
+inicio
+retorne (s1 + s2)
+fimfuncao
+
+funcao sub (su1, su2 : inteiro): inteiro
+inicio
+retorne (su1 - su2)
+fimfuncao
+
+funcao mult (m1, m2 : inteiro): inteiro
+inicio
+retorne (m1 * m2)
+fimfuncao
+
+funcao divi (d1, d2 : real): real
+inicio
+retorne (d1 / d2)
+fimfuncao
+
+
+
+procedimento menus (botao : inteiro): 
+
+inicio
+    escreval("")
+   escreval("========================================")
+   escreval("")
+   escreval("Bem vindo a calculadora digital.")
+   escreval("")
+   escreval("Para realizar uma soma, digite 1")
+   escreval("Para realizar uma subtração, digite 2")
+   escreval("Para realizar uma multiplicação, digite 3")
+   escreval("Para realizar uma divisão, digite 4")
+   escreval("Para sair da calculadore, digite 5")
+   escreval("")
+   escreval("========================================")
+   escreval("")
+
+   leia(menu)
+
+
+fimprocedimento
+
+
+var
+x, y, menu : inteiro
+
+
+inicio
+
+enquanto menu <> 5 faca
+
+menus(0)
+
+escolha menu
+
+caso 1
+escreval("Digite o primeiro número inteiro para a soma: ")
+leia(x)
+escreval("Digite o segundo número inteiro para a soma: ")
+leia(y)
+escreval("O resultado da soma é: ", soma(x,y))
+
+
+caso 2
+escreval("Digite o primeiro número inteiro para a subtração: ")
+leia(x)
+escreval("Digite o segundo número inteiro para a subtração: ")
+leia(y)
+escreval("O resultado da subtração é: ", sub(x,y))
+
+
+caso 3 
+escreval("Digite o primeiro número inteiro para a multiplicação: ")
+leia(x)
+escreval("Digite o segundo número inteiro para a multiplicação: ")
+leia(y)
+escreval("O resultado da multiplicação é: ", mult(x,y))
+
+
+caso 4
+escreval("Digite o primeiro número inteiro para a divisão: ")
+leia(x)
+escreval("Digite o segundo número inteiro para a divisão: ")
+leia(y)
+escreval("O resultado da divisão é: ", divi(x,y))
+
+
+caso 5
+escreval ("Fechando calculadora...")
+fimescolha
+
+fimenquanto
+
+fimalgoritmo
