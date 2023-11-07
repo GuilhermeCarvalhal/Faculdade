@@ -1,0 +1,62 @@
+Algoritmo "2"
+
+//2. Crie um programa que lê três números do usuário, e utiliza duas funções diferentes para
+//determinar o maior e o menor número. Imprima o maior e menor valor na tela.
+
+tipo funcao (menor : n1, n2, n3 : inteiro): inteiro
+
+inicio
+
+se (n1 < n2) e (n1 < n3) entao 
+
+retorne n1
+
+senao 
+
+se (n2 < n1) e (n2 < n3) entao 
+
+retorne n2 
+
+senao 
+
+retorne n3 
+
+fimfuncao
+
+tipo funcao (maior : n1, n2, n3 : inteiro): inteiro
+
+inicio
+
+se (n1 > n2) e (n1 > n3) entao 
+
+retorne n1
+
+senao 
+
+se (n2 > n1) e (n2 > n3) entao 
+
+retorne n2 
+
+senao 
+
+retorne n3 
+
+fimfuncao
+
+var 
+
+x, y, z : inteiro 
+
+inicio 
+
+escreval("Digite um valor para o primeiro número: ")
+leia(x)
+escreval("Digite um valor para o segundo número: ")
+leia(y)
+escreval("Digite um valor para o terceiro número: ")
+leia(z)
+
+escreval("O maior número é: ", maior(x,y,z))
+escreval("O menor número é: ", menor(x,y,z))
+
+
