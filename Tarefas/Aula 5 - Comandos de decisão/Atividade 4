@@ -1,0 +1,20 @@
+Algoritmo "4"
+
+//Elabore um algoritmo que leia dois números inteiros e mostre o resultado da diferença do maior valor pelo menor
+
+var
+   x, y : inteiro
+
+inicio
+
+   escreval("Digite o primeiro número inteiro: ")
+   leia(x)
+   escreval("Digite o segundo número inteiro: ")
+   leia(y)
+
+   se x > y entao
+      escreval("A diferença do maior número pelo menor é de: ", (x-y))
+   senao
+      escreval("A diferença do maior número pelo menor é de: ", (y-x))
+   fimse
+fimalgoritmo

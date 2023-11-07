@@ -1,0 +1,21 @@
+Algoritmo "7"
+
+//Elabore um algoritmo que lê um número inteiro e informa se o número lido é negativo ou positivo. O valor zero é
+//considerado positivo.
+
+var
+
+   n : inteiro
+
+inicio
+
+   escreval("Leia um número inteiro")
+   leia(n)
+
+   se n >= 0 entao
+      escreval ("O número ", n, " é positivo")
+   senao
+      escreval ("O número ", n, " é negativo")
+   fimse
+
+fimalgoritmo

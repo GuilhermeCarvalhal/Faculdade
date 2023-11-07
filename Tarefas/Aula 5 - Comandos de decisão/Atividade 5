@@ -1,0 +1,28 @@
+Algoritmo "5"
+
+//Elabore um algoritmo a ler 4 notas de um aluno (de 0 a 10). Após calcular a média das notas, apresentar a mensagem
+//“Aprovada” se o aluno tiver obtido média maior ou igual a 6, caso contrário, apresentar “Reprovado”.
+
+var
+   i : inteiro
+   n, soma, media : real
+inicio
+
+   para i de 1 ate 4 faca
+      escreval("Digite a nota número ", i, " do aluno(a):")
+      leia(n)
+      se (n < 0) ou (n > 10) entao
+         interrompa
+      fimse
+      soma <- n + soma
+   fimpara
+
+   media <- soma / 4
+
+   se media >= 6 entao
+      escreval("Aprovada")
+   senao
+      escreval("Reprovado")
+   fimse
+
+fimalgoritmo

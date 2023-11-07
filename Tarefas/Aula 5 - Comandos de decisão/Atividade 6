@@ -1,0 +1,53 @@
+Algoritmo "6"
+
+//Altere o algoritmo anterior para que seja lido do teclado, além das notas, o sexo do aluno (M ou F). Se for masculino, o
+//resultado deverá ser precedido de “Caro aluno, seu resultado é: “. Se for feminino, o resultado deverá ser precedido de
+//“Cara aluna, seu resultado é: “.
+
+var
+   i : inteiro
+   n, soma, media : real
+   gen, s : caracter
+
+inicio
+   enquanto (gen <> "M") e (gen <> "F") faca
+      escreval("Digite seu sexo (M) homem ou (F) mulher: ")
+      leia(gen)
+      se gen = "M" entao
+         escreval("Sexo válido!")
+      senao
+         se gen = "F" entao
+            escreval("Sexo válido!")
+         senao
+            escreval("Sexo inválido!")
+         fimse
+      fimse
+   fimenquanto
+
+
+   para i de 1 ate 4 faca
+      escreval("Digite a nota número ", i, " do aluno(a):")
+      leia(n)
+      se (n < 0) ou (n > 10) entao
+         interrompa
+      fimse
+      soma <- n + soma
+   fimpara
+
+   media <- soma / 4
+
+   se media >= 6 entao
+      s <- "Aprovado"
+   senao
+      s <- "Reprovado"
+   fimse
+
+   se gen = "M" entao
+      escreval("Caro aluno, seu resultado é: ", s)
+   senao
+      escreval("Cara aluna, seu resultado é: ", s)
+   fimse
+
+
+fimalgoritmo
+

@@ -1,0 +1,24 @@
+Algoritmo "3"
+
+//Elabore um algoritmo que leia do teclado o sexo de uma pessoa. Se o sexo digitado for M ou F, escrever na tela “Sexo
+//válido!”. Caso contrário, informar “Sexo inválido!”
+
+var
+
+   gen : caracter
+
+inicio
+
+   escreval("Digite seu sexo (M) homem ou (F) mulher: ")
+   leia(gen)
+
+   se gen = "M" entao
+      escreval("Sexo válido!")
+   senao
+      se gen = "F" entao
+         escreval("Sexo válido!")
+      senao
+         escreval("Sexo inválido!")
+      fimse
+   fimse
+fimalgoritmo
