@@ -1,0 +1,37 @@
+Algoritmo "1"
+
+//Crie um programa que lê um número do usuário, e utiliza um procedimento para verificar se o
+//número encontra-se entre 0 e 10.
+
+procedimento searcher (n : inteiro): 
+
+var
+cont : inteiro
+
+inicio
+
+para i de 1 ate 10 faca
+se n = i entao
+cont <- cont + 1
+fimse
+fimpara
+
+se cont = 1 entao
+escreval("O número se encontra entre 0 e 10")
+senao
+escreval("O número não se encontra entre 0 e 10")
+fimse 
+
+fimprocedimento
+
+var 
+n1, i : inteiro
+
+inicio
+
+escreval("Digite um número inteiro: ")
+leia(n1)
+
+searcher(n1)
+
+fimalgoritmo
