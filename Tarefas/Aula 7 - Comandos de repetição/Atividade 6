@@ -1,0 +1,24 @@
+Algoritmo "6"
+
+//Ler 5 números inteiros informados pelo usuário, e ao final mostrar a soma desses números. a.
+//Complementar o exercício 6 informando, ao final, se a soma representa um número par ou ímpar.
+
+
+var
+   n, i, soma : inteiro
+
+inicio
+
+   para i de 1 ate 5 faca
+      escreval("Digite um número inteiro para a posição", i)
+      leia(n)
+      soma <- soma + n
+   fimpara
+
+   se soma mod 2 = 0 entao
+      escreval("O valor total da soma é ", soma, " um número par")
+   senao
+      escreval("O valor total da soma é ", soma, " um número ímpar")
+   fimse
+
+fimalgoritmo

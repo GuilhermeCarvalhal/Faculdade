@@ -1,0 +1,29 @@
+Algoritmo "7"
+
+//Dado um número inteiro positivo, determine se ele é ou não um número primo OBS: Um número
+//primo é aquele que só é divisível por 1 e por ele próprio. Ex.: 7 -> 7/7 = 1; 7/1 = 7
+
+var
+
+   n, i, cont : inteiro
+
+inicio
+   enquanto n <= 0 faca
+      escreval("Digite um número inteiro positivo")
+      leia(n)
+   fimenquanto
+
+   para i de 2 ate n faca
+
+      se n mod i = 0  entao
+         cont <- cont + 1
+      fimse
+   fimpara
+
+   se cont = 1 entao
+      escreval(n, " é um número primo")
+   senao
+      escreval(n, " não é um número primo")
+   fimse
+
+fimalgoritmo

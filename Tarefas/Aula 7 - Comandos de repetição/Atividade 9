@@ -1,0 +1,23 @@
+Algoritmo "9"
+
+//Crie um programa que lê um número maior que zero e imprime o dobro de todos os números
+//entre 0 e o número lido.
+
+var
+
+   i, n : inteiro
+
+inicio
+
+   enquanto n <= 0 faca
+      escreval("Digite um número inteiro maior que 0: ")
+      leia(n)
+   fimenquanto
+   escreval("O dobro de todos os números entre 0 e ", n, " são respectivamente: ")
+   n <- n - 1
+
+   para i de 1 ate n faca
+      escreval(i * 2)
+   fimpara
+
+fimalgoritmo

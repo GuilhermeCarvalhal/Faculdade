@@ -1,0 +1,18 @@
+Algoritmo "8"
+
+//Faça a tabuada de multiplicação (1 a 10) de um número inteiro fornecido pelo usuário.
+
+var
+   n, i : inteiro
+
+inicio
+
+   escreval("Digite um número inteiro: ")
+   leia(n)
+   escreval("A tabuada do  número ", n, " é:")
+
+   para i de 1 ate 10 faca
+      escreval(n, " x ", i, " = ", (n * i) )
+   fimpara
+
+fimalgoritmo
