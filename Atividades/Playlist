@@ -1,0 +1,148 @@
+Algoritmo "Gás"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 03/10/2023
+
+tipo
+   playlist = registro
+
+      nome : caracter
+      album : caracter
+      gravadora : caracter
+      ano : inteiro
+      genero : caracter
+      artista : caracter
+      duracao : inteiro
+      escutada : logico
+      nota_pessoal : real
+      slot : logico
+
+   fimregistro
+
+procedimento adicionar (nova : caracter):
+var
+
+inicio
+   para i de 1 ate 2 faca
+
+      se espaco = 2 entao
+         escreval("Sua playlist está lotada, delete alguma música para registrar um nova.")
+         interrompa
+      fimse
+
+      se MinhaPlaylist[i].slot = falso entao
+         escreval("Digite o nome da nova música:")
+         leia(Minhaplaylist[i].nome)
+
+         escreval("Digite o nome do álbum que a música pertence: ")
+         leia(MinhaPlaylist[i].album)
+
+         escreval("Digite o nome da gravadora")
+         leia(MinhaPlaylist[i].gravadora)
+
+         escreval("Digite o ano de lançamento da música")
+         leia(MinhaPlaylist[i].ano)
+
+         escreval("Digite o gênero da música")
+         leia(MinhaPlaylist[i].genero)
+
+         escreval("Digite o nome do(a) artista")
+         leia(MinhaPlaylist[i].artista)
+
+         escreval("Informe o tempo de duração da música")
+         leia(MinhaPlaylist[i].duracao)
+
+         escreval("Informe se a música foi ouvida")
+         leia(MinhaPlaylist[i].escutada)
+
+         escreval("Digite a sua nota para a música")
+         leia(MinhaPlaylist[i].nota_pessoal)
+
+
+         MinhaPlaylist[i].slot <- verdadeiro
+         espaco <- espaco + 1
+         interrompa
+      fimse
+
+   fimpara
+
+
+fimprocedimento
+
+procedimento remover (remo : caracter):
+var
+
+inicio
+   escreval("Digite exatamente o nome da música que deseja remover: ")
+   leia(remo)
+   para i de 1 ate 50 faca
+      se remo = MinhaPlaylist[i].nome entao
+
+         MinhaPlaylist[i].nome <- ""
+
+        MinhaPlaylist[i].album <- ""
+        MinhaPlaylist[i].gravadora <- ""
+        MinhaPlaylist[i].ano <- 0
+        MinhaPlaylist[i].genero <- ""
+        MinhaPlaylist[i].artista <- ""
+        MinhaPlaylist[i].duracao 
+        MinhaPlaylist[i].escutada 
+        MinhaPlaylist[i].nota_pessoal
+        MinhaPlaylist[i].slot 
+
+
+
+         escreval("O contato referente a posição ", i, " foi apagado")
+
+         MinhaPlaylist[i].cadastrado <- falso
+         espaco <- espaco - 1
+         interrompa
+      fimse
+
+   fimpara
+
+fimprocedimento
+
+funcao menus (botao : inteiro): inteiro
+
+inicio
+
+   escreval("========================================")
+   escreval("")
+   escreval("Bem vindo a sua playlist.")
+   escreval("")
+   escreval("Para adicionar uma nova música, digite 1")
+   escreval("Para remover uma música já existente, digite 2")
+   escreval("Para buscar por uma música, digite 3")
+   escreval("Para fechar sua playlist, digite 4")
+   escreval("")
+   escreval("========================================")
+
+   leia(botao)
+
+   retorne botao
+
+fimfuncao
+
+var
+   MinhaPlaylist : vetor[1..2] de playlist
+   i, menu, espaco : inteiro
+
+
+inicio
+
+   enquanto menu <> 4 faca
+
+      menu <- menus(0)
+
+      se menu = 1 entao
+         adicionar("novo")
+      senao
+      se menu = 2 entao
+        remover
+
+   fimenquanto
+
+fimalgoritmo

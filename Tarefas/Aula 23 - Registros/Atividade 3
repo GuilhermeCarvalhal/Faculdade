@@ -85,9 +85,11 @@ inicio
          escreval("Telefone: ", Agenda[i].telefone)
 
          interrompa
+         
       fimse
 
    fimpara
+
 
 fimprocedimento
 
@@ -98,6 +100,7 @@ funcao menus (botao : inteiro): inteiro
 
 inicio
 
+   escreval("")
    escreval("========================================")
    escreval("")
    escreval("Bem vindo a sua agenda de contatos.")
@@ -108,6 +111,7 @@ inicio
    escreval("Para fechar sua lista de contatos, digite 4")
    escreval("")
    escreval("========================================")
+   escreval("Quantidade de contatos registrados: ", espaco)
 
    leia(botao)
 
