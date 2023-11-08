@@ -135,20 +135,23 @@ inicio
       menu <- menus(0)
 
       se menu = 1 entao
-         cadastrar("novo")
-      fimse
+   cadastrar("novo")
+senao
 
-      se menu = 2 entao
-         remover("")
-      fimse
+   se menu = 2 entao
+      remover("")
+   senao
 
       se menu = 3 entao
          procurar("")
-      fimse
+      senao
 
-      se menu = 4 entao
-         escreval("Fechando agenda...")
+         se menu = 4 entao
+            escreval("Fechando agenda...")
+         fimse
       fimse
+   fimse
+fimse
 
 
 
