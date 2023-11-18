@@ -276,7 +276,7 @@ inicio
    escreval("========================================")
    escreval("Como você deseja organizar sua playlist?")
    escreval("Digite 1 para organizar manualmente")
-   escreval("Digite 2 para organizar em ordem crescente (Utilizando a duração da música como base)")
+   escreval("Digite 2 para organizar em ordem decrescente (Utilizando a duração da música como base)")
    escreval("Digite qualquer outra tecla para sair do menu de organização")
    leia(meio)
 
