@@ -246,16 +246,19 @@ inicio
    caso "3"
       se espaco = 0 entao
          error("")
-         interrompa
+         escreval("Adicione uma música antes.")
       senao
          repita
-            indice <- randi(tamanho + 1)
+            repita
+               indice <- randi(tamanho + 1)
+            ate indice > 0
          ate MinhaPlaylist[indice].slot = verdadeiro
-      fimse
-      escreval("A música que você escutou foi: ", MinhaPlaylist[indice].nome)
-      MinhaPlaylist[indice].escutada <- verdadeiro
+         escreval("A música que você escutou foi: ", MinhaPlaylist[indice].nome)
+         MinhaPlaylist[indice].escutada <- verdadeiro
 
-      MinhaPlaylist[indice].nota <- avaliacao(0)
+         MinhaPlaylist[indice].nota <- avaliacao(0)
+      fimse
+
 
 
 
@@ -386,9 +389,11 @@ inicio
    escreval("Para visualizar sua playlist, digite 1")
    escreval("Para adicionar uma nova música, digite 2")
    escreval("Para remover uma música já existente, digite 3")
+   escreval("")
    escreval("Para buscar por uma música, digite 4")
    escreval("Para escutar uma música, digite 5")
    escreval("Para organizar sua playlist, digite 6")
+   escreval("")
    escreval("Para limpar sua tela, digite 'C'")
    escreval("Para fechar sua playlist, digite 0")
    escreval("")
