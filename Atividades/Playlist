@@ -389,6 +389,7 @@ inicio
    escreval("Para buscar por uma música, digite 4")
    escreval("Para escutar uma música, digite 5")
    escreval("Para organizar sua playlist, digite 6")
+   escreval("Para limpar sua tela, digite 'C'")
    escreval("Para fechar sua playlist, digite 0")
    escreval("")
    escreval("========================================")
@@ -408,7 +409,7 @@ var
 inicio
 
    tamanho <- 5 //SEMPRE DECLARARAR O TAMANHO DO VETOR.
-   
+
 
    enquanto menu <> "0" faca
 
@@ -435,6 +436,9 @@ inicio
 
       caso "6"
          organizar("")
+
+      caso "C"
+         limpatela
 
       fimescolha
 
