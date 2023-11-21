@@ -217,7 +217,7 @@ inicio
             escreval("A música que você escutou foi: ", MinhaPlaylist[indice].nome)
             MinhaPlaylist[indice].escutada <- verdadeiro
 
-            MinhaPlaylist[indice].nota <- avaliacao(0)
+            MinhaPlaylist[indice].nota <- avaliacao(MinhaPlaylist[indice].nota)
 
          senao
             error("")
@@ -233,7 +233,7 @@ inicio
             escreval("A música que você escutou foi: ", MinhaPlaylist[indice].nome)
             MinhaPlaylist[indice].escutada <- verdadeiro
 
-            MinhaPlaylist[indice].nota <- avaliacao(0)
+            MinhaPlaylist[indice].nota <- avaliacao(MinhaPlaylist[indice].nota)
             verify <- 1
             interrompa
          fimse
@@ -256,7 +256,7 @@ inicio
          escreval("A música que você escutou foi: ", MinhaPlaylist[indice].nome)
          MinhaPlaylist[indice].escutada <- verdadeiro
 
-         MinhaPlaylist[indice].nota <- avaliacao(0)
+         MinhaPlaylist[indice].nota <- avaliacao(MinhaPlaylist[indice].nota)
       fimse
 
 
