@@ -446,7 +446,7 @@ inicio
          organizar("")
 
       caso "C"
-         limpatela
+         limpatela  {limpa a tela do CMD}
 
       fimescolha
 
