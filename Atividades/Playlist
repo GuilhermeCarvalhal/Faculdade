@@ -151,7 +151,7 @@ inicio
 
    escolha busca  {Comando de decisão}
 
-   caso "1" 
+   caso "1"
       escreval("Digite a posição referente a música que deseja buscar: ")
       leia(indice) {Evita um overflow de memória}
       se (indice > tamanho) ou (indice <= 0) entao
@@ -207,7 +207,7 @@ inicio
    escolha escutas
 
    caso "1"
-      escreval("Digite a posição referente a música que deseja escutar: ")   
+      escreval("Digite a posição referente a música que deseja escutar: ")
       leia(indice) {Lê a posição}
       se (indice > tamanho) ou (indice <= 0) entao {Impedir overflow}
          error("")
