@@ -322,7 +322,6 @@ procedimento bubblesort (num : real):
 
 var
    buffer : playlist
-   j : inteiro
    swapcounter : inteiro
 inicio
 
