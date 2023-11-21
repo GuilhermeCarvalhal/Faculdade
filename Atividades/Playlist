@@ -293,7 +293,7 @@ inicio
 
       escreval("AVISO: NÃO SELECIONE POSIÇÕES MAIOR QUE O TAMANHO DA PLAYLIST: ", tamanho)
 
-      enquanto (n1 <= 0) ou (n1 > tamanho) faca {evita erros de overglow}
+      enquanto (n1 <= 0) ou (n1 > tamanho) faca {evita erros de overflow}
          escreval("PRIMEIRO digite o NÚMERO equivalente a POSIÇÃO da música que deseja TROCAR de lugar.")
          leia(n1)
       fimenquanto
