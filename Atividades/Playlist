@@ -156,28 +156,28 @@ inicio
       leia(indice) {Evita um overflow de memória}
       se (indice > tamanho) ou (indice <= 0) entao
          error("")
-         buscar("")
+         buscar("") {Reseta função e erro}
       senao
-         se MinhaPlaylist[indice].slot = verdadeiro entao
+         se MinhaPlaylist[indice].slot = verdadeiro entao {Verifica se existe uma música registrada no espaço de i e então mostra todas as informações do espaço i do vetor}
             escreval("Nome : ", MinhaPlaylist[indice].nome, " | Albúm: ", MinhaPlaylist[indice].album, " | Gravadora: ", MinhaPlaylist[indice].gravadora, " | Ano: ", MinhaPlaylist[indice].ano, " | Gênero: ", MinhaPlaylist[indice].genero, " | Artista: ", MinhaPlaylist[indice].artista, " | Duração: ", MinhaPlaylist[indice].duracao, " | Nota: ", MinhaPlaylist[indice].nota, " | Escutada: ", MinhaPlaylist[indice].escutada, " | ")
          senao
             error("")
-            buscar("")
+            buscar("") {Reseta função e erro}
          fimse
       fimse
 
 
    caso "2"
       escreval("Digite o exato nome da música que deseja buscar ")
-      leia(busca)
-      para indice de 1 ate tamanho faca
+      leia(busca) {Lê o nome exato da músico que o leitor quer}
+      para indice de 1 ate tamanho faca                     {Percorre o vetor verificando se existe uma música idêntica registrada na playlist}
          se (busca = MinhaPlaylist[indice].nome) E (MinhaPlaylist[indice].slot = verdadeiro) entao
             escreval("Nome : ", MinhaPlaylist[indice].nome, " | Albúm: ", MinhaPlaylist[indice].album, " | Gravadora: ", MinhaPlaylist[indice].gravadora, " | Ano: ", MinhaPlaylist[indice].ano, " | Gênero: ", MinhaPlaylist[indice].genero, " | Artista: ", MinhaPlaylist[indice].artista, " | Duração: ", MinhaPlaylist[indice].duracao, " | Nota: ", MinhaPlaylist[indice].nota, " | Escutada: ", MinhaPlaylist[indice].escutada, " | ")
-            verify <- 1
+            verify <- 1 {Verifica}
             interrompa
          fimse
       fimpara
-      se verify <> 1 entao
+      se verify <> 1 entao {Se não estiver verificado, informa o erro}
          escreval("Nome não encontrado")
       fimse
 
@@ -191,7 +191,7 @@ inicio
 
 fimprocedimento
 
-procedimento escutar (escutas : caracter):
+procedimento escutar (escutas : caracter): {Simula escutar a música}
 var
    indice, verify : inteiro
    name : caracter
@@ -202,25 +202,25 @@ inicio
    escreval("")
    escreval("Digite 1 para escutar por posiçao, Digite 2 para escutar por nome OU Digite 3 para usar o modo aleatório.")
    escreval("Caso deseje cancelar a busca, Digite 0")
-   leia(escutas)
+   leia(escutas) {Novamente, escolha de meio de busca, só que dessa vez introduzindo o fator aleatório}
 
    escolha escutas
 
    caso "1"
-      escreval("Digite a posição referente a música que deseja escutar: ")
-      leia(indice)
-      se (indice > tamanho) ou (indice <= 0) entao
+      escreval("Digite a posição referente a música que deseja escutar: ")   
+      leia(indice) {Lê a posição}
+      se (indice > tamanho) ou (indice <= 0) entao {Impedir overflow}
          error("")
          escutar("")
       senao
-         se MinhaPlaylist[indice].slot = verdadeiro entao
+         se MinhaPlaylist[indice].slot = verdadeiro entao                  {Verifica se a música existe e então passa aloca o "escutada" como verdadeiro}
             escreval("A música que você escutou foi: ", MinhaPlaylist[indice].nome)
             MinhaPlaylist[indice].escutada <- verdadeiro
 
-            MinhaPlaylist[indice].nota <- avaliacao(MinhaPlaylist[indice].nota)
+            MinhaPlaylist[indice].nota <- avaliacao(MinhaPlaylist[indice].nota) {Envia a música para avaliação opcional}
 
          senao
-            error("")
+            error("") {reseta}
             escutar("")
          fimse
       fimse
@@ -229,7 +229,7 @@ inicio
       escreval("Digite o exato nome da música que deseja escutar ")
       leia(name)
       para indice de 1 ate tamanho faca
-         se (name = MinhaPlaylist[indice].nome) E (MinhaPlaylist[indice].slot = verdadeiro) entao
+         se (name = MinhaPlaylist[indice].nome) E (MinhaPlaylist[indice].slot = verdadeiro) entao {Verifica o vetor inteiro procurando pelo nome}
             escreval("A música que você escutou foi: ", MinhaPlaylist[indice].nome)
             MinhaPlaylist[indice].escutada <- verdadeiro
 
@@ -244,19 +244,19 @@ inicio
       fimse
 
    caso "3"
-      se espaco = 0 entao
+      se espaco = 0 entao           {Verifica se existem músicas a serem tocadas}
          error("")
          escreval("Adicione uma música antes.")
       senao
          repita
             repita
-               indice <- randi(tamanho + 1)
+               indice <- randi(tamanho + 1) {Gera um número aleatório ATÉ encontrar alguma música com o slot verdadeiro e o designa para a posição do vetor, garante que o número é diferente de 0}
             ate indice > 0
-         ate MinhaPlaylist[indice].slot = verdadeiro
+         ate MinhaPlaylist[indice].slot = verdadeiro   {}
          escreval("A música que você escutou foi: ", MinhaPlaylist[indice].nome)
          MinhaPlaylist[indice].escutada <- verdadeiro
 
-         MinhaPlaylist[indice].nota <- avaliacao(MinhaPlaylist[indice].nota)
+         MinhaPlaylist[indice].nota <- avaliacao(MinhaPlaylist[indice].nota) {Avaliação}
       fimse
 
 
@@ -281,19 +281,19 @@ inicio
    escreval("Digite 1 para organizar manualmente")
    escreval("Digite 2 para organizar em ordem decrescente (Utilizando a duração da música como base)")
    escreval("Digite qualquer outra tecla para sair do menu de organização")
-   leia(meio)
+   leia(meio) {Escolhe entre organizar a playlist manualmente ou automaticamente}
 
    escolha meio
 
    caso "1"
-      escreval("")
+      escreval("")  {No caso de ser manual, passa a informação das posições para o usuário}
       para i de 1 ate tamanho faca
          escreval("Posição : ", i, " | Nome: ", MinhaPlaylist[i].nome)
       fimpara
 
       escreval("AVISO: NÃO SELECIONE POSIÇÕES MAIOR QUE O TAMANHO DA PLAYLIST: ", tamanho)
 
-      enquanto (n1 <= 0) ou (n1 > tamanho) faca
+      enquanto (n1 <= 0) ou (n1 > tamanho) faca {evita erros de overglow}
          escreval("PRIMEIRO digite o NÚMERO equivalente a POSIÇÃO da música que deseja TROCAR de lugar.")
          leia(n1)
       fimenquanto
@@ -303,14 +303,14 @@ inicio
       fimenquanto
 
 
-      buff <- MinhaPlaylist[n1]
-      MinhaPlaylist[n1] <- MinhaPlaylist[n2]
-      MinhaPlaylist[n2] <- buff
+      buff <- MinhaPlaylist[n1]   {Utiliza de uma varíavel temporária do tipo Playlist para "guardar" os valores da primeira posição selecionada}
+      MinhaPlaylist[n1] <- MinhaPlaylist[n2]  {Transforma o primeiro valor selecionado no segundo}
+      MinhaPlaylist[n2] <- buff  {utilizando a variável temporária como apoio, transforma o segundo valor no primeiro, efetivando a troca}
 
       escreval("Troca bem-sucedida")
 
    caso "2"
-      bubblesort(0)
+      bubblesort(0)   {explicar na aula}
 
 
    fimescolha
@@ -345,7 +345,7 @@ inicio
 
 fimprocedimento
 
-funcao avaliacao (n : real): real
+funcao avaliacao (n : real): real {recebe o valor da nota atual da música}
 var
    yn : caracter
 
@@ -354,20 +354,20 @@ inicio
    escreval("Digite (Sim) para dar uma nota.")
    escreval("Digite qualquer tecla para não dar uma nota.")
    leia(yn)
-
+                  {Verifica se o usuário deseja quer dar uma nota ou reescrever uma existente para a música}
    se yn = "Sim" entao
       n <- 0
       escreval("Digite a nota de 1 até 10: ")
-      enquanto (n <= 0) ou (n > 10) faca
+      enquanto (n <= 0) ou (n > 10) faca {Fornece a nota}
          leia(n)
       fimenquanto
 
 
    senao
-      retorne n
+      retorne n {retorna o valor da nota sem alterá-lo}
    fimse
 
-   retorne n
+   retorne n {retorna o  valor alterado}
 fimfuncao
 
 procedimento error (erro : caracter):
