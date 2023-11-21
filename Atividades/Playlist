@@ -12,38 +12,39 @@ tipo
       duracao : real
       escutada : logico
       nota : real
-      slot : logico
+      slot : logico        {Vai servir para identificar se um espaço no vetor tem uma música registrada ou não.}
+                           {Falso = Espaço livre, Verdadeiro = Música registrada.}
 
    fimregistro
 
-procedimento visualizar (view : inteiro):
+procedimento visualizar (view : inteiro):  {Visualização geral da playlist com informação resumidas a Posição, Nome, Duração e Nota pessoal.}
 var
 
 inicio
-   se espaco > 0 entao
-      para i de 1 ate tamanho faca
-         se MinhaPlaylist[i].slot = verdadeiro entao
+   se espaco > 0 entao     {Garante que exista ao menos uma música registrada na playlist}
+      para i de 1 ate tamanho faca                 {Manipulação de vetor usando o tamanho da playlist como base}
+         se MinhaPlaylist[i].slot = verdadeiro entao     {Apenas irá mostrar os espaço que tiverem o slot verdadeiro, ou seja, os espaços que tiverem músicas registradas}
             escreval("Posição: ", i, " | Nome: ", MinhaPlaylist[i].nome, " | Duração: ", MinhaPlaylist[i].duracao, " | Nota: ", MinhaPlaylist[i].nota, " | ")
          fimse
       fimpara
    senao
-      escreval("Sua playlist está vazia, adicione mais músicas.")
+      escreval("Sua playlist está vazia, adicione mais músicas.") {No caso do espaço ser 0, solicita a adição de músicas}
    fimse
 
 fimprocedimento
 
-procedimento adicionar (nova : caracter):
+procedimento adicionar (nova : caracter):  {Procedimento para adicionar uma nova música}
 var
 
 inicio
-   para i de 1 ate tamanho faca
+   para i de 1 ate tamanho faca   {Manipulação de vetor, com o intuito de encontrar um espaço vazio na playlist}
 
-      se espaco = tamanho entao
+      se espaco = tamanho entao   {Impede a adição de uma música caso a playlist esteja lotada}
          escreval("Sua playlist está lotada, delete alguma música para registrar um nova.")
          interrompa
       fimse
 
-      se MinhaPlaylist[i].slot = falso entao
+      se MinhaPlaylist[i].slot = falso entao    {Procura um espaço vazio na playlist, visto que um espaço preenchido teria o "slot" como verdadeiro}
          escreval("Digite o nome da nova música:")
          leia(MinhaPlaylist[i].nome)
 
@@ -66,8 +67,8 @@ inicio
          escreval("Exemplo: 3.14")
          leia(MinhaPlaylist[i].duracao)
 
-         MinhaPlaylist[i].slot <- verdadeiro
-         espaco <- espaco + 1
+         MinhaPlaylist[i].slot <- verdadeiro  {Assim como citado acima, ao adicionar uma música, o respectivo o slot do vetor selecionado é colocado como verdadeiro.}
+         espaco <- espaco + 1                  {Mantém a contagem de músicas registradas.}
 
          escreval("Música adicionada com sucesso na posição ", i)
          interrompa
@@ -78,68 +79,67 @@ inicio
 
 fimprocedimento
 
-procedimento remover (remo : caracter):
+procedimento remover (remo : caracter): {Função para remover uma música}
 var
    indice, verify : inteiro
 inicio
-   escreval("Você prefere remover a música digitando a posição em que ela se encontra ou digitando o nome da música?")
+   escreval("Você prefere remover a música digitando a posição em que ela se encontra ou digitando o nome da música?")    {Contexto}
    escreval("Exemplo: A música hino do inter se localiza na posição 2, então você digitará o número 2 para removê-la.")
    escreval("")
    escreval("Digite 1 para remoção por posiçao, Digite 2 pare remoção por nome ou Digite outra tecla qualquer para cancelar.")
    leia(remo)
 
-   escolha remo
+   escolha remo {Essa linha vai definir se o usuário vai remover a música digitando ela pela posição que ela pertence ou pelo nome.}
 
    caso "1"
 
       escreval("Digite a posição referente a música que deseja remover: ")
       leia(indice)
-      se (indice > tamanho) OU (indice <= 0) entao
+      se (indice > tamanho) OU (indice <= 0) entao   {Evita um overflow de memória ou uma posição inválida}
          escreval("Posição inválida, tente novamente.")
-         remo("")
+         remover("")  {Chama o procedimento novamente, fazendo com que ele resete}
       senao
-         se MinhaPlaylist[indice].slot = verdadeiro entao
-            MinhaPlaylist[indice].slot <- falso
+         se MinhaPlaylist[indice].slot = verdadeiro entao {Garante que a posição digitada contém uma música registrada.}
+            MinhaPlaylist[indice].slot <- falso   {Caso tenha, o slot é setado como espaço vazio ao definir como "falso".}
             escreval("A música referente a posição ", indice, " foi apagado")
-            espaco <- espaco - 1
+            espaco <- espaco - 1     {Remove 1 de espaço}
          senao
-            escreval("Posição inválida, tente novamente.")
-            remo("")
+            escreval("Posição inválida, tente novamente.") {Caso o espaço selecionado seja válido mas não tenha uma música registrada:}
+            remover("")  {Chama o procedimento novamente, fazendo com que ele resete}
          fimse
       fimse
 
 
 
-   caso "2"
+   caso "2"  {Remoção por nome}
       escreval("Digite exatamente o nome da música que deseja remover: ")
-      leia(remo)
-      para i de 1 ate tamanho faca
-         se remo = MinhaPlaylist[i].nome E MinhaPlaylist[i].slot = verdadeiro entao
-
-            MinhaPlaylist[i].slot <- falso
+      leia(remo)      {O usuário digita o nome da música que deseja remover}
+      para i de 1 ate tamanho faca {Percorre a playlist}
+         se (remo = MinhaPlaylist[i].nome) E (MinhaPlaylist[i].slot = verdadeiro) entao {Verifica item por item se alguma música da playlist tem o mesmo nome que o valor dado pelo usuário.}
+                                                                                    {Também garante que a música esteja registrada, "Slot verdadeiro"}
+            MinhaPlaylist[i].slot <- falso  {Caso tenha, o slot é setado como espaço vazio ao definir como "falso".}
 
             escreval("A música referente a posição ", i, " foi apagado")
-            espaco <- espaco - 1
-            verify <- 1
-            interrompa
+            espaco <- espaco - 1 {Remove 1 de espaço}
+            verify <- 1 {Variável que confirma a remoção.}
+            interrompa {interrompe o processo assim que a música foi achada para evitar desperdício na memória.}
          fimse
 
       fimpara
-      se verify <> 1 entao
+      se verify <> 1 entao {Mostra ao usuário que a música não foi encontrada.}
          escreval("Nome não encontrado")
       fimse
 
    outrocaso
-      escreval("Remoção cancelada.")
+      escreval("Remoção cancelada.") {Contexto se a remoção for cancelada}
 
    fimescolha
 
 fimprocedimento
 
-procedimento buscar (busca : caracter):
+procedimento buscar (busca : caracter): {Procedimento de busca}
 var
    indice, verify : inteiro
-   name : caracter
 
 inicio
    escreval("Você prefere buscar a música digitando a posição em que ela se encontra ou digitando o nome da música?")
@@ -147,13 +147,13 @@ inicio
    escreval("")
    escreval("Digite 1 para buscar por posiçao OU Digite 2 pare buscar por nome.")
    escreval("Caso deseje cancelar a busca, Digite 0")
-   leia(busca)
+   leia(busca) {Essa linha vai definir se o usuário vai buscar a música digitando ela pela posição que ela pertence ou pelo nome.}
 
-   escolha busca
+   escolha busca  {Comando de decisão}
 
-   caso "1"
+   caso "1" 
       escreval("Digite a posição referente a música que deseja buscar: ")
-      leia(indice)
+      leia(indice) {Evita um overflow de memória}
       se (indice > tamanho) ou (indice <= 0) entao
          error("")
          buscar("")
@@ -169,9 +169,9 @@ inicio
 
    caso "2"
       escreval("Digite o exato nome da música que deseja buscar ")
-      leia(name)
+      leia(busca)
       para indice de 1 ate tamanho faca
-         se (name = MinhaPlaylist[indice].nome) E (MinhaPlaylist[indice].slot = verdadeiro) entao
+         se (busca = MinhaPlaylist[indice].nome) E (MinhaPlaylist[indice].slot = verdadeiro) entao
             escreval("Nome : ", MinhaPlaylist[indice].nome, " | Albúm: ", MinhaPlaylist[indice].album, " | Gravadora: ", MinhaPlaylist[indice].gravadora, " | Ano: ", MinhaPlaylist[indice].ano, " | Gênero: ", MinhaPlaylist[indice].genero, " | Artista: ", MinhaPlaylist[indice].artista, " | Duração: ", MinhaPlaylist[indice].duracao, " | Nota: ", MinhaPlaylist[indice].nota, " | Escutada: ", MinhaPlaylist[indice].escutada, " | ")
             verify <- 1
             interrompa
@@ -211,7 +211,7 @@ inicio
       leia(indice)
       se (indice > tamanho) ou (indice <= 0) entao
          error("")
-         buscar("")
+         escutar("")
       senao
          se MinhaPlaylist[indice].slot = verdadeiro entao
             escreval("A música que você escutou foi: ", MinhaPlaylist[indice].nome)
@@ -221,7 +221,7 @@ inicio
 
          senao
             error("")
-            buscar("")
+            escutar("")
          fimse
       fimse
 
@@ -413,12 +413,12 @@ var
 
 inicio
 
-   tamanho <- 5 //SEMPRE DECLARARAR O TAMANHO DO VETOR.
+   tamanho <- 5   {Variável que deve corresponder ao tamanho do vetor, com fins de otimização}
 
 
-   enquanto menu <> "0" faca
+   enquanto menu <> "0" faca  {Laço de repetição que irá loopar o menu}
 
-      menu <- menus("0")
+      menu <- menus("0")      {Função que chama o menu e simula a leitura de um botão.}
       escolha menu
 
       caso "0"
