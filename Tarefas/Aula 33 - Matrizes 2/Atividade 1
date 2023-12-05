@@ -1,0 +1,43 @@
+Algoritmo "1"
+
+Var
+   m : vetor[1..4, 1..4] de inteiro
+   l, c, cont, maior, l1, c1 : inteiro
+
+Inicio
+
+   para c de 1 ate 4 faca
+      para l de 1 ate 4 faca
+
+         m[c, l] <- randi(100)
+         escreva(" | ", m[c, l], " | ")
+         se m[c, l] > 50 entao
+            cont <- cont + 1
+         fimse
+      fimpara
+
+      escreval("")
+   fimpara
+
+   maior <- m[1, 1]
+   l1 <- 1
+   c1 <- 1
+
+   para c de 1 ate 4 faca
+      para l de 1 ate 4 faca
+         se m[c, l] > maior entao
+            maior <- m[c, l]
+            l1 <- l
+            c1 <- c
+         fimse
+      fimpara
+   fimpara
+
+
+   escreval("")
+   escreval("Essa matriz possui", cont, " número maiores que 50.")
+   escreval("O maior número da matriz é ", maior, " e se localiza nas posições: ", c1, ", ", l1)
+
+
+
+Fimalgoritmo

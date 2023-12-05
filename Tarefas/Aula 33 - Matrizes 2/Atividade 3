@@ -1,0 +1,60 @@
+Algoritmo "3"
+
+procedimento venhamatriz (n : inteiro):
+var
+inicio
+   escolha n
+   caso 1
+      para l de 1 ate 4 faca
+         para c de 1 ate 4 faca
+            escreva(" | ", A[l, c], " | ")
+         fimpara
+         escreval("")
+      fimpara
+
+   caso 2
+      para l de 1 ate 4 faca
+         para c de 1 ate 4 faca
+            escreva(" | ", B[l, c], " | ")
+         fimpara
+         escreval("")
+      fimpara
+
+   caso 3
+      para l de 1 ate 4 faca
+         para c de 1 ate 4 faca
+            escreva(" | ", SOMA[l, c], " | ")
+         fimpara
+         escreval("")
+      fimpara
+   fimescolha
+fimprocedimento
+
+var
+   A, B, SOMA : vetor[1..4, 1..4] de inteiro
+   l, c : inteiro
+
+inicio
+
+   para l de 1 ate 4 faca
+      para c de 1 ate 4 faca
+         A[l, c] <- randi(99)
+         B[l, c] <- randi(99)
+
+         SOMA[l, c] <- A[l, c] + B[l, c]
+      fimpara
+   fimpara
+
+   venhamatriz(1) //escreve a matriz
+   escreval("")
+   escreval("============================================================")
+   escreval("")
+   venhamatriz(2)
+   escreval("")
+   escreval("============================================================")
+   escreval("")
+   venhamatriz(3)
+   escreval("")
+   escreval("============================================================")
+
+fimalgoritmo

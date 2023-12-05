@@ -1,0 +1,33 @@
+Algoritmo "2"
+
+var
+m : vetor[1..5, 1..5] de inteiro
+c, l : inteiro
+
+inicio
+
+c <- 5
+
+para l de 1 ate 5 faca
+m[l, c] <- 1
+c <- c - 1
+fimpara
+
+
+
+para l de 1 ate 5 faca
+para c de 1 ate 5 faca
+se l = c entao
+m[l, c] <- 1
+fimse
+
+se m[l, c] <> 1 entao
+m[l,c] <- 0
+fimse
+
+escreva(" | ", m[l, c], " | ")
+fimpara
+escreval("")
+fimpara
+
+fimalgoritmo
