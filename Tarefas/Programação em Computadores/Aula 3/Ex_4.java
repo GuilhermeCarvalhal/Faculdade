@@ -15,7 +15,18 @@ public class Ex_4 {
 
         B = sc.nextBoolean();
 
-        System.out.println((A && B) ? "A e B são AMBOS verdadeiros" : "A e B são AMBOS falsos");
+        if (A && B)
+        {
+            System.out.println("A e B são AMBOS verdadeiros");
+        }
+        else if ((A == false) && (B == false))
+        {
+            System.out.println("A e B são AMBOS falsos");
+        }
+        else
+        {
+            System.out.println("A e B são opostos");
+        }
 
         sc.close();
 
