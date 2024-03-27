@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ATV3 {
+public class ATV3_4 {
 
     public static int leitura(int n[], Scanner sc) {
 

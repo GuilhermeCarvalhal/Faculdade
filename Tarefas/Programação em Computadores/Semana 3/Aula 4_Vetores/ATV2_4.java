@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ATV2 {
+public class ATV2_4 {
     public static void main(String[] args) {
 
         int[] A = new int[10];
