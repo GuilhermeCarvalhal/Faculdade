@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class E_2 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 //Elabore um programa que leia um número inteiro (aceitar somente valores entre 1 e 10) e escrever a
 //tabuada de 1 a 10 do número lido
     Scanner sc = new Scanner(System.in);

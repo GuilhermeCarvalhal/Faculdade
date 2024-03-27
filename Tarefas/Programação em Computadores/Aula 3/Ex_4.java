@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Ex_4 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         
         Boolean A, B;
 

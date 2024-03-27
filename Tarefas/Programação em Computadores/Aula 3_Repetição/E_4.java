@@ -14,7 +14,7 @@ public class E_4 {
         return result;
     }
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Digite um número inteiro:");

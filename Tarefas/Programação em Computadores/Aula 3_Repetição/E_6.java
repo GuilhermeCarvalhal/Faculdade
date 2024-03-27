@@ -3,7 +3,7 @@
 import java.util.Scanner;
 
 public class E_6 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int n[];
     n = new int[10];

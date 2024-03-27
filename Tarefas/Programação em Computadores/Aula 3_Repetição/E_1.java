@@ -1,5 +1,5 @@
 public class E_1 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         
         for (int i = 0; i < 100; i++)
         {

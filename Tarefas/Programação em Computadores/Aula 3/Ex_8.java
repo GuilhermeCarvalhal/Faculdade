@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Ex_8 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         
         double pre, resultado = 0.0;
 

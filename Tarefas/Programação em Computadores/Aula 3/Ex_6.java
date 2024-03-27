@@ -1,7 +1,7 @@
 import java.util.Scanner;
 //Escreva um programa que leia três valores inteiros e diferentes e mostre-os em ordem decrescente.
 public class Ex_6 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         
         int[] A;
         A = new int[3];

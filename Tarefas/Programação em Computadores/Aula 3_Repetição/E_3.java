@@ -2,7 +2,7 @@ import java.util.Scanner;
 //) Elabore um programa que leia um número N e imprimir todos os números inteiros de 1 até N. Considere
 //que o N será sempre maior que UM)
 public class E_3 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
    
     int N = 0;
