@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Ex_3 {
     public static void main(String[] args) {
-        
+
         int A, B, C;
 
         Scanner sc = new Scanner(System.in);
@@ -15,13 +15,10 @@ public class Ex_3 {
 
         B = sc.nextInt();
 
-        if (A == B)
-        {
+        if (A == B) {
             C = A + B;
             System.out.printf("%d + %d = %d", A, B, C);
-        }
-        else
-        {
+        } else {
             C = A * B;
             System.out.printf("%d x %d = %d", A, B, C);
         }

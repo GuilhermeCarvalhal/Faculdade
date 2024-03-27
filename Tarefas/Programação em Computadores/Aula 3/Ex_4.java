@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Ex_4 {
     public static void main(String[] args) {
-        
+
         Boolean A, B;
 
         Scanner sc = new Scanner(System.in);
@@ -15,16 +15,11 @@ public class Ex_4 {
 
         B = sc.nextBoolean();
 
-        if (A && B)
-        {
+        if (A && B) {
             System.out.println("A e B são AMBOS verdadeiros");
-        }
-        else if ((A == false) && (B == false))
-        {
+        } else if ((A == false) && (B == false)) {
             System.out.println("A e B são AMBOS falsos");
-        }
-        else
-        {
+        } else {
             System.out.println("A e B são opostos");
         }
 
