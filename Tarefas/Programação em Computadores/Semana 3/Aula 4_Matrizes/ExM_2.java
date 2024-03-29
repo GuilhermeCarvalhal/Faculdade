@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class ExM_2 {
     public static void main(String[] args) {
-        float[][] A = new float[3][3];
+        float[][] A = new float[10][3];
         int m1 = 0, m2 = 0, m3 = 0, menor;
         Scanner sc = new Scanner(System.in);
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 10; i++) {
             menor = 1;
             for (int j = 0; j < 3; j++) {
                 System.out.println("Insira a nota referente à: \n" + "Aluno: " + (i + 1) + " Prova: " + (j + 1));
