@@ -90,5 +90,4 @@ public class Imovel {
     public Endereco getLocalizacao() {
         return localizacao;
     }
-    // Alteração
 }
