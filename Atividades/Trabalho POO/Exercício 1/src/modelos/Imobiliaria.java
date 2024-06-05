@@ -79,7 +79,13 @@ public class Imobiliaria {
 
         for (Imovel imovel : lista_de_imoveis) {
             if (codigo == imovel.getCodigo()) {
+                System.out.println("==============================" + "\n");
+                System.out.println("O preço do imóvel atualmente é de: " + imovel.getPreco());
+                System.out.println("Digite o novo preço do imóvel: ");
+                float novoPreco = sc.nextFloat();
 
+                imovel.setPreco(novoPreco);
+                System.out.println("Preço alterado!");
             }
         }
     }
