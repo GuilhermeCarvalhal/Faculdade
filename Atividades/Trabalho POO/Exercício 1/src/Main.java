@@ -73,7 +73,7 @@ public class Main {
                     }
                     break;
                 case 9:
-                    imobiliaria.cheat();
+                    imobiliaria.apresentacao();
                     break;
                 case 0:
                     System.out.println("Saindo do sistema.");

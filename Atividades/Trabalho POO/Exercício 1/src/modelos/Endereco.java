@@ -31,6 +31,7 @@ public class Endereco {
         this.bairro = bairro;
     }
 
+    // Override no método equals
     @Override
     public boolean equals(Object o) {
         if (this == o)
