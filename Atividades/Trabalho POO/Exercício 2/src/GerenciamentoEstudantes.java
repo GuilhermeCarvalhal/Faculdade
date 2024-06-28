@@ -71,8 +71,13 @@ public class GerenciamentoEstudantes {
         String nome = scanner.nextLine();
         System.out.print("CPF: ");
         String cpf = scanner.nextLine();
-        System.out.print("Matrícula: ");
-        String matricula = scanner.nextLine();
+
+        String matricula;
+        do {
+            System.out.print("Matrícula: ");
+            matricula = scanner.nextLine();
+        } while (matricula.equals(null));
+
         System.out.print("Nota 01: ");
         double nota01 = scanner.nextDouble();
         System.out.print("Nota 02: ");
