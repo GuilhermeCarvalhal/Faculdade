@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 import modelos.*;
 
-public class TesteCalculadora {
+public class TestaCalculadora {
     public static void main(String[] args) {
         // Testando PilhaGenerica com Integer
        Calculadora calc = new Calculadora();
