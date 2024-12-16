@@ -2,7 +2,7 @@ import java.util.*;
 
 import modelos.*;
 
-class TestaGrafo {
+public class TestaGrafo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Grafo grafo = null;
