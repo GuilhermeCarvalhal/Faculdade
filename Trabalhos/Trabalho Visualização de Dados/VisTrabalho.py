@@ -1,7 +1,7 @@
 import pandas as pd #Biblioteca responsável por ler o dataset
 import matplotlib.pyplot as plt #Criação e customização de gráficos
 import geopandas as gpd #Transformação de coordenadas em geometrias
-from shapely.geometry import Point #Representação de geometrias (pontos, polígonos) para análise espacial. (Conversão de latitudes e longitudes)
+from shapely.geometry import Point #Representação de geometrias. (Conversão de latitudes e longitudes)
 import folium  #Geração de mapas interativos
 from folium.plugins import MarkerCluster 
 
@@ -43,7 +43,7 @@ def main():
     g1(crimes, municipio)   #Gráfico 1
     g2(crimes, municipio)  #Gráfico 2
     g3(crimes, municipio)  #Gráfico 3 
-    g4()  #Gráfico 4
+    #g4()  #Gráfico 4
     #curioso()
     
 def g1(crimes, local):
@@ -85,7 +85,9 @@ def g1(crimes, local):
     #Titulo geral
     fig.suptitle(f'Distribuição Temporal de Crimes em São Paulo ({menor_ano}-{maior_ano})', fontsize=10)
     plt.tight_layout() #Ajusta espaçamento
+    plt.savefig("gráfico_1.png", dpi=300) #Salva
     plt.show() #Mostra o mapa
+    
 
 
 def g2(crimes, local):
@@ -122,15 +124,17 @@ def g2(crimes, local):
                 ha="left", fontsize=10, bbox=dict(facecolor='white', alpha=0.7)) 
         
     plt.tight_layout() #Formata o mapa
+    plt.savefig("gráfico_2.png", dpi=300) #Salva
     plt.show() #mostra
+
 
 def g3(crimes, local):
 
-    crimes_em_sp = gpd.sjoin(crimes, local, how="inner", predicate="within")
+    crimes_em_local = gpd.sjoin(crimes, local, how="inner", predicate="within")
     
     # Calcula o percentil de 95% de valor de prejuizo e remove 5% dos maiores valores para evitar distorção na visualização
-    q95 = crimes_em_sp['valor_prejuizo'].quantile(0.95)
-    crimes_filtrados = crimes_em_sp[crimes_em_sp['valor_prejuizo'] <= q95]
+    q95 = crimes_em_local['valor_prejuizo'].quantile(0.95)
+    crimes_filtrados = crimes_em_local[crimes_em_local['valor_prejuizo'] <= q95]
     
     # Configura o plot
     fig, ax = plt.subplots(figsize=(15, 12))
@@ -179,6 +183,7 @@ def g3(crimes, local):
         f"Prejuízo acumulado: R${crimes_filtrados['valor_prejuizo'].sum():,.2f}",
         ha="center", fontsize=10, bbox=dict(facecolor='white', alpha=0.7, edgecolor='lightgray'))
     
+    plt.savefig("gráfico_3.png", dpi=300) #Salva    
     plt.show()
 
 
