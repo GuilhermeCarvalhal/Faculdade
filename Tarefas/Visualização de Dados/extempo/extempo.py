@@ -21,8 +21,8 @@ if isinstance(df.columns, pd.MultiIndex):
 df.index = pd.to_datetime(df.index)
 
 def main():
-    #ex1()
-    #ex2()
+    ex1()
+    ex2()
     ex3()
 
 def ex1():
