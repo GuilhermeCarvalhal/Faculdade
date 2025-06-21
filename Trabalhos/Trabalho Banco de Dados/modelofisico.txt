@@ -1,0 +1,154 @@
+/* Lógico_1: */
+
+CREATE TABLE projeto (
+    id_projeto integer PRIMARY KEY,
+    titulo varchar(255),
+    data_inicio timestamp,
+    descricao varchar(500),
+    status varchar(50),
+    fk_documento_id_documento integer,
+    fk_Disciplina_id_disciplina integer
+);
+
+CREATE TABLE usuario (
+    id_usuario integer PRIMARY KEY,
+    nome varchar(255),
+    email varchar(255),
+    login varchar(255),
+    senha varchar(50),
+    area_atuacao varchar(75),
+    matricula integer,
+    ano_ingresso integer,
+    especialidade varchar(50),
+    fk_departamento_id_departamento integer
+);
+
+CREATE TABLE documento (
+    id_documento integer PRIMARY KEY,
+    caminho_arquivo varchar(255),
+    formato varchar(100),
+    descricao varchar(255),
+    data_upload timestamp
+);
+
+CREATE TABLE tarefa (
+    id_tarefa integer PRIMARY KEY,
+    descricao varchar(255),
+    prazo timestamp,
+    status varchar(50),
+    fk_projeto_id_projeto integer
+);
+
+CREATE TABLE disciplina (
+    id_disciplina integer PRIMARY KEY,
+    nome varchar(255),
+    codigo integer,
+    carga_horaria varchar(25),
+    fk_departamento_id_departamento_ integer
+);
+
+CREATE TABLE equipamento (
+    id_equipamento integer PRIMARY KEY,
+    nome varchar(255),
+    especificacoes varchar(255),
+    status varchar(50)
+);
+
+CREATE TABLE relatorio (
+    id_relatorio integer PRIMARY KEY,
+    titulo varchar(255),
+    conteudo varchar(255),
+    data_geracao timestamp,
+    fk_projeto_id_projeto integer
+);
+
+CREATE TABLE reuniao (
+    id_reuniao integer PRIMARY KEY,
+    data_hora timestamp,
+    local varchar(255),
+    pauta varchar(255),
+    fk_projeto_id_projeto integer
+);
+
+CREATE TABLE avaliacao (
+    id_avaliacao integer PRIMARY KEY,
+    tipo varchar(30),
+    nota numeric,
+    feedback varchar(255),
+    fk_projeto_id_projeto integer
+);
+
+CREATE TABLE departamento (
+    id_departamento integer PRIMARY KEY,
+    nome varchar(255)
+);
+
+CREATE TABLE proj_usu (
+    fk_projeto_id_projeto integer,
+    fk_usuario_id_usuario integer
+);
+
+CREATE TABLE proj_equip (
+    fk_Equipamento_id_equipamento integer,
+    fk_projeto_id_projeto integer
+);
+ 
+ALTER TABLE projeto ADD CONSTRAINT FK_projeto_2
+    FOREIGN KEY (fk_documento_id_documento)
+    REFERENCES documento (id_documento)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE projeto ADD CONSTRAINT FK_projeto_3
+    FOREIGN KEY (fk_disciplina_id_disciplina)
+    REFERENCES disciplina (id_disciplina)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE usuario ADD CONSTRAINT FK_usuario_2
+    FOREIGN KEY (fk_departamento_id_departamento)
+    REFERENCES departamento (id_departamento)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE tarefa ADD CONSTRAINT FK_tarefa_2
+    FOREIGN KEY (fk_projeto_id_projeto)
+    REFERENCES projeto (id_projeto)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE disciplina ADD CONSTRAINT FK_disciplina_2
+    FOREIGN KEY (fk_departamento_id_departamento_)
+    REFERENCES departamento (id_departamento)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE relatorio ADD CONSTRAINT FK_relatorio_2
+    FOREIGN KEY (fk_projeto_id_projeto)
+    REFERENCES projeto (id_projeto)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE reuniao ADD CONSTRAINT FK_reuniao_2
+    FOREIGN KEY (fk_projeto_id_projeto)
+    REFERENCES projeto (id_projeto)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE avaliacao ADD CONSTRAINT FK_avaliacao_2
+    FOREIGN KEY (fk_projeto_id_projeto)
+    REFERENCES projeto (id_projeto)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE proj_usu ADD CONSTRAINT FK_proj_usu_1
+    FOREIGN KEY (fk_projeto_id_projeto)
+    REFERENCES projeto (id_projeto)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE proj_usu ADD CONSTRAINT FK_proj_usu_2
+    FOREIGN KEY (fk_usuario_id_usuario)
+    REFERENCES usuario (id_usuario)
+    ON DELETE SET NULL;
+ 
+ALTER TABLE proj_equip ADD CONSTRAINT FK_proj_equip_1
+    FOREIGN KEY (fk_Equipamento_id_equipamento)
+    REFERENCES equipamento (id_equipamento)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE proj_equip ADD CONSTRAINT FK_proj_equip_2
+    FOREIGN KEY (fk_projeto_id_projeto)
+    REFERENCES projeto (id_projeto)
+    ON DELETE SET NULL;
