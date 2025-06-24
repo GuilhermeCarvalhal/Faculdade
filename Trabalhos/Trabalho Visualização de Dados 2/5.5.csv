@@ -1,0 +1,364 @@
+﻿Granularidade_Geografica;Categoria;Filtro;Localidade;Estado;UF;Ano;Valor;Tipo Valor;Indicador
+Brasil;Localidade;Total;Brasil;;;2013;0,168;%;5.5
+Norte;Localidade;Total;Região;;;2013;0,206;%;5.5
+Rondônia;Localidade;Total;Estado;Rondônia;RO;2013;0,204;%;5.5
+Acre;Localidade;Total;Estado;Acre;AC;2013;0,236;%;5.5
+Amazonas;Localidade;Total;Estado;Amazonas;AM;2013;0,167;%;5.5
+Roraima;Localidade;Total;Estado;Roraima;RR;2013;0,127;%;5.5
+Pará;Localidade;Total;Estado;Pará;PA;2013;0,227;%;5.5
+Amapá;Localidade;Total;Estado;Amapá;AP;2013;0,172;%;5.5
+Tocantins;Localidade;Total;Estado;Tocantins;TO;2013;0,207;%;5.5
+Nordeste;Localidade;Total;Região;;;2013;0,266;%;5.5
+Maranhão;Localidade;Total;Estado;Maranhão;MA;2013;0,275;%;5.5
+Piauí;Localidade;Total;Estado;Piauí;PI;2013;0,299;%;5.5
+Ceará;Localidade;Total;Estado;Ceará;CE;2013;0,258;%;5.5
+Rio Grande do Norte;Localidade;Total;Estado;Rio Grande do Norte;RN;2013;0,244;%;5.5
+Paraíba;Localidade;Total;Estado;Paraíba;PB;2013;0,307;%;5.5
+Pernambuco;Localidade;Total;Estado;Pernambuco;PE;2013;0,236;%;5.5
+Alagoas;Localidade;Total;Estado;Alagoas;AL;2013;0,289;%;5.5
+Sergipe;Localidade;Total;Estado;Sergipe;SE;2013;0,271;%;5.5
+Bahia;Localidade;Total;Estado;Bahia;BA;2013;0,269;%;5.5
+Sudeste;Localidade;Total;Região;;;2013;0,118;%;5.5
+Minas Gerais;Localidade;Total;Estado;Minas Gerais;MG;2013;0,17;%;5.5
+Espírito Santo;Localidade;Total;Estado;Espírito Santo;ES;2013;0,148;%;5.5
+Rio de Janeiro;Localidade;Total;Estado;Rio de Janeiro;RJ;2013;0,1;%;5.5
+São Paulo;Localidade;Total;Estado;São Paulo;SP;2013;0,099;%;5.5
+Sul;Localidade;Total;Região;;;2013;0,124;%;5.5
+Paraná;Localidade;Total;Estado;Paraná;PR;2013;0,154;%;5.5
+Santa Catarina;Localidade;Total;Estado;Santa Catarina;SC;2013;0,097;%;5.5
+Rio Grande do Sul;Localidade;Total;Estado;Rio Grande do Sul;RS;2013;0,112;%;5.5
+Centro-Oeste;Localidade;Total;Região;;;2013;0,149;%;5.5
+Mato Grosso do Sul;Localidade;Total;Estado;Mato Grosso do Sul;MS;2013;0,173;%;5.5
+Mato Grosso;Localidade;Total;Estado;Mato Grosso;MT;2013;0,167;%;5.5
+Goiás;Localidade;Total;Estado;Goiás;GO;2013;0,159;%;5.5
+Distrito Federal;Localidade;Total;Estado;Distrito Federal;DF;2013;0,084;%;5.5
+Brasil;Localidade;Total;Brasil;;;2014;0,1592;%;5.5
+Norte;Localidade;Total;Região;;;2014;0,197;%;5.5
+Rondônia;Localidade;Total;Estado;Rondônia;RO;2014;0,224;%;5.5
+Acre;Localidade;Total;Estado;Acre;AC;2014;0,236;%;5.5
+Amazonas;Localidade;Total;Estado;Amazonas;AM;2014;0,161;%;5.5
+Roraima;Localidade;Total;Estado;Roraima;RR;2014;0,123;%;5.5
+Pará;Localidade;Total;Estado;Pará;PA;2014;0,213;%;5.5
+Amapá;Localidade;Total;Estado;Amapá;AP;2014;0,147;%;5.5
+Tocantins;Localidade;Total;Estado;Tocantins;TO;2014;0,192;%;5.5
+Nordeste;Localidade;Total;Região;;;2014;0,2544;%;5.5
+Maranhão;Localidade;Total;Estado;Maranhão;MA;2014;0,262;%;5.5
+Piauí;Localidade;Total;Estado;Piauí;PI;2014;0,29;%;5.5
+Ceará;Localidade;Total;Estado;Ceará;CE;2014;0,253;%;5.5
+Rio Grande do Norte;Localidade;Total;Estado;Rio Grande do Norte;RN;2014;0,253;%;5.5
+Paraíba;Localidade;Total;Estado;Paraíba;PB;2014;0,273;%;5.5
+Pernambuco;Localidade;Total;Estado;Pernambuco;PE;2014;0,221;%;5.5
+Alagoas;Localidade;Total;Estado;Alagoas;AL;2014;0,289;%;5.5
+Sergipe;Localidade;Total;Estado;Sergipe;SE;2014;0,246;%;5.5
+Bahia;Localidade;Total;Estado;Bahia;BA;2014;0,255;%;5.5
+Sudeste;Localidade;Total;Região;;;2014;0,1996;%;5.5
+Minas Gerais;Localidade;Total;Estado;Minas Gerais;MG;2014;0,154;%;5.5
+Espírito Santo;Localidade;Total;Estado;Espírito Santo;ES;2014;0,135;%;5.5
+Rio de Janeiro;Localidade;Total;Estado;Rio de Janeiro;RJ;2014;0,094;%;5.5
+São Paulo;Localidade;Total;Estado;São Paulo;SP;2014;0,093;%;5.5
+Sul;Localidade;Total;Região;;;2014;0,1212;%;5.5
+Paraná;Localidade;Total;Estado;Paraná;PR;2014;0,139;%;5.5
+Santa Catarina;Localidade;Total;Estado;Santa Catarina;SC;2014;0,113;%;5.5
+Rio Grande do Sul;Localidade;Total;Estado;Rio Grande do Sul;RS;2014;0,109;%;5.5
+Centro-Oeste;Localidade;Total;Região;;;2014;0,1441;%;5.5
+Mato Grosso do Sul;Localidade;Total;Estado;Mato Grosso do Sul;MS;2014;0,169;%;5.5
+Mato Grosso;Localidade;Total;Estado;Mato Grosso;MT;2014;0,168;%;5.5
+Goiás;Localidade;Total;Estado;Goiás;GO;2014;0,151;%;5.5
+Distrito Federal;Localidade;Total;Estado;Distrito Federal;DF;2014;0,081;%;5.5
+Brasil;Localidade;Total;Brasil;;;2015;0,152;%;5.5
+Norte;Localidade;Total;Região;;;2015;0,188;%;5.5
+Rondônia;Localidade;Total;Estado;Rondônia;RO;2015;0,189;%;5.5
+Acre;Localidade;Total;Estado;Acre;AC;2015;0,227;%;5.5
+Amazonas;Localidade;Total;Estado;Amazonas;AM;2015;0,153;%;5.5
+Roraima;Localidade;Total;Estado;Roraima;RR;2015;0,112;%;5.5
+Pará;Localidade;Total;Estado;Pará;PA;2015;0,209;%;5.5
+Amapá;Localidade;Total;Estado;Amapá;AP;2015;0,148;%;5.5
+Tocantins;Localidade;Total;Estado;Tocantins;TO;2015;0,187;%;5.5
+Nordeste;Localidade;Total;Região;;;2015;0,244;%;5.5
+Maranhão;Localidade;Total;Estado;Maranhão;MA;2015;0,268;%;5.5
+Piauí;Localidade;Total;Estado;Piauí;PI;2015;0,276;%;5.5
+Ceará;Localidade;Total;Estado;Ceará;CE;2015;0,256;%;5.5
+Rio Grande do Norte;Localidade;Total;Estado;Rio Grande do Norte;RN;2015;0,222;%;5.5
+Paraíba;Localidade;Total;Estado;Paraíba;PB;2015;0,264;%;5.5
+Pernambuco;Localidade;Total;Estado;Pernambuco;PE;2015;0,218;%;5.5
+Alagoas;Localidade;Total;Estado;Alagoas;AL;2015;0,275;%;5.5
+Sergipe;Localidade;Total;Estado;Sergipe;SE;2015;0,221;%;5.5
+Bahia;Localidade;Total;Estado;Bahia;BA;2015;0,233;%;5.5
+Sudeste;Localidade;Total;Região;;;2015;0,105;%;5.5
+Minas Gerais;Localidade;Total;Estado;Minas Gerais;MG;2015;0,153;%;5.5
+Espírito Santo;Localidade;Total;Estado;Espírito Santo;ES;2015;0,133;%;5.5
+Rio de Janeiro;Localidade;Total;Estado;Rio de Janeiro;RJ;2015;0,084;%;5.5
+São Paulo;Localidade;Total;Estado;São Paulo;SP;2015;0,088;%;5.5
+Sul;Localidade;Total;Região;;;2015;0,113;%;5.5
+Paraná;Localidade;Total;Estado;Paraná;PR;2015;0,133;%;5.5
+Santa Catarina;Localidade;Total;Estado;Santa Catarina;SC;2015;0,096;%;5.5
+Rio Grande do Sul;Localidade;Total;Estado;Rio Grande do Sul;RS;2015;0,103;%;5.5
+Centro-Oeste;Localidade;Total;Região;;;2015;0,135;%;5.5
+Mato Grosso do Sul;Localidade;Total;Estado;Mato Grosso do Sul;MS;2015;0,176;%;5.5
+Mato Grosso;Localidade;Total;Estado;Mato Grosso;MT;2015;0,151;%;5.5
+Goiás;Localidade;Total;Estado;Goiás;GO;2015;0,138;%;5.5
+Distrito Federal;Localidade;Total;Estado;Distrito Federal;DF;2015;0,074;%;5.5
+Brasil;Localidade;Total;Brasil;;;2016;0,156;%;5.5
+Norte;Localidade;Total;Região;;;2016;0,192;%;5.5
+Rondônia;Localidade;Total;Estado;Rondônia;RO;2016;0,206;%;5.5
+Acre;Localidade;Total;Estado;Acre;AC;2016;0,236;%;5.5
+Amazonas;Localidade;Total;Estado;Amazonas;AM;2016;0,165;%;5.5
+Roraima;Localidade;Total;Estado;Roraima;RR;2016;0,155;%;5.5
+Pará;Localidade;Total;Estado;Pará;PA;2016;0,202;%;5.5
+Amapá;Localidade;Total;Estado;Amapá;AP;2016;0,134;%;5.5
+Tocantins;Localidade;Total;Estado;Tocantins;TO;2016;0,21;%;5.5
+Nordeste;Localidade;Total;Região;;;2016;0,246;%;5.5
+Maranhão;Localidade;Total;Estado;Maranhão;MA;2016;0,262;%;5.5
+Piauí;Localidade;Total;Estado;Piauí;PI;2016;0,271;%;5.5
+Ceará;Localidade;Total;Estado;Ceará;CE;2016;0,255;%;5.5
+Rio Grande do Norte;Localidade;Total;Estado;Rio Grande do Norte;RN;2016;0,22;%;5.5
+Paraíba;Localidade;Total;Estado;Paraíba;PB;2016;0,251;%;5.5
+Pernambuco;Localidade;Total;Estado;Pernambuco;PE;2016;0,223;%;5.5
+Alagoas;Localidade;Total;Estado;Alagoas;AL;2016;0,287;%;5.5
+Sergipe;Localidade;Total;Estado;Sergipe;SE;2016;0,243;%;5.5
+Bahia;Localidade;Total;Estado;Bahia;BA;2016;0,24;%;5.5
+Sudeste;Localidade;Total;Região;;;2016;0,108;%;5.5
+Minas Gerais;Localidade;Total;Estado;Minas Gerais;MG;2016;0,144;%;5.5
+Espírito Santo;Localidade;Total;Estado;Espírito Santo;ES;2016;0,142;%;5.5
+Rio de Janeiro;Localidade;Total;Estado;Rio de Janeiro;RJ;2016;0,097;%;5.5
+São Paulo;Localidade;Total;Estado;São Paulo;SP;2016;0,093;%;5.5
+Sul;Localidade;Total;Região;;;2016;0,119;%;5.5
+Paraná;Localidade;Total;Estado;Paraná;PR;2016;0,146;%;5.5
+Santa Catarina;Localidade;Total;Estado;Santa Catarina;SC;2016;0,105;%;5.5
+Rio Grande do Sul;Localidade;Total;Estado;Rio Grande do Sul;RS;2016;0,102;%;5.5
+Centro-Oeste;Localidade;Total;Região;;;2016;0,149;%;5.5
+Mato Grosso do Sul;Localidade;Total;Estado;Mato Grosso do Sul;MS;2016;0,164;%;5.5
+Mato Grosso;Localidade;Total;Estado;Mato Grosso;MT;2016;0,178;%;5.5
+Goiás;Localidade;Total;Estado;Goiás;GO;2016;0,154;%;5.5
+Distrito Federal;Localidade;Total;Estado;Distrito Federal;DF;2016;0,09;%;5.5
+Brasil;Localidade;Total;Brasil;;;2017;0,143;%;5.5
+Norte;Localidade;Total;Região;;;2017;0,173;%;5.5
+Rondônia;Localidade;Total;Estado;Rondônia;RO;2017;0,17;%;5.5
+Acre;Localidade;Total;Estado;Acre;AC;2017;0,204;%;5.5
+Amazonas;Localidade;Total;Estado;Amazonas;AM;2017;0,137;%;5.5
+Roraima;Localidade;Total;Estado;Roraima;RR;2017;0,106;%;5.5
+Pará;Localidade;Total;Estado;Pará;PA;2017;0,192;%;5.5
+Amapá;Localidade;Total;Estado;Amapá;AP;2017;0,121;%;5.5
+Tocantins;Localidade;Total;Estado;Tocantins;TO;2017;0,189;%;5.5
+Nordeste;Localidade;Total;Região;;;2017;0,231;%;5.5
+Maranhão;Localidade;Total;Estado;Maranhão;MA;2017;0,255;%;5.5
+Piauí;Localidade;Total;Estado;Piauí;PI;2017;0,255;%;5.5
+Ceará;Localidade;Total;Estado;Ceará;CE;2017;0,228;%;5.5
+Rio Grande do Norte;Localidade;Total;Estado;Rio Grande do Norte;RN;2017;0,209;%;5.5
+Paraíba;Localidade;Total;Estado;Paraíba;PB;2017;0,249;%;5.5
+Pernambuco;Localidade;Total;Estado;Pernambuco;PE;2017;0,204;%;5.5
+Alagoas;Localidade;Total;Estado;Alagoas;AL;2017;0,272;%;5.5
+Sergipe;Localidade;Total;Estado;Sergipe;SE;2017;0,226;%;5.5
+Bahia;Localidade;Total;Estado;Bahia;BA;2017;0,229;%;5.5
+Sudeste;Localidade;Total;Região;;;2017;0,096;%;5.5
+Minas Gerais;Localidade;Total;Estado;Minas Gerais;MG;2017;0,134;%;5.5
+Espírito Santo;Localidade;Total;Estado;Espírito Santo;ES;2017;0,12;%;5.5
+Rio de Janeiro;Localidade;Total;Estado;Rio de Janeiro;RJ;2017;0,089;%;5.5
+São Paulo;Localidade;Total;Estado;São Paulo;SP;2017;0,079;%;5.5
+Sul;Localidade;Total;Região;;;2017;0,109;%;5.5
+Paraná;Localidade;Total;Estado;Paraná;PR;2017;0,139;%;5.5
+Santa Catarina;Localidade;Total;Estado;Santa Catarina;SC;2017;0,085;%;5.5
+Rio Grande do Sul;Localidade;Total;Estado;Rio Grande do Sul;RS;2017;0,094;%;5.5
+Centro-Oeste;Localidade;Total;Região;;;2017;0,129;%;5.5
+Mato Grosso do Sul;Localidade;Total;Estado;Mato Grosso do Sul;MS;2017;0,149;%;5.5
+Mato Grosso;Localidade;Total;Estado;Mato Grosso;MT;2017;0,163;%;5.5
+Goiás;Localidade;Total;Estado;Goiás;GO;2017;0,134;%;5.5
+Distrito Federal;Localidade;Total;Estado;Distrito Federal;DF;2017;0,064;%;5.5
+Brasil;Localidade;Total;Brasil;;;2018;0,136;%;5.5
+Norte;Localidade;Total;Região;;;2018;0,163;%;5.5
+Rondônia;Localidade;Total;Estado;Rondônia;RO;2018;0,158;%;5.5
+Acre;Localidade;Total;Estado;Acre;AC;2018;0,198;%;5.5
+Amazonas;Localidade;Total;Estado;Amazonas;AM;2018;0,131;%;5.5
+Roraima;Localidade;Total;Estado;Roraima;RR;2018;0,117;%;5.5
+Pará;Localidade;Total;Estado;Pará;PA;2018;0,177;%;5.5
+Amapá;Localidade;Total;Estado;Amapá;AP;2018;0,123;%;5.5
+Tocantins;Localidade;Total;Estado;Tocantins;TO;2018;0,187;%;5.5
+Nordeste;Localidade;Total;Região;;;2018;0,22;%;5.5
+Maranhão;Localidade;Total;Estado;Maranhão;MA;2018;0,241;%;5.5
+Piauí;Localidade;Total;Estado;Piauí;PI;2018;0,252;%;5.5
+Ceará;Localidade;Total;Estado;Ceará;CE;2018;0,207;%;5.5
+Rio Grande do Norte;Localidade;Total;Estado;Rio Grande do Norte;RN;2018;0,194;%;5.5
+Paraíba;Localidade;Total;Estado;Paraíba;PB;2018;0,244;%;5.5
+Pernambuco;Localidade;Total;Estado;Pernambuco;PE;2018;0,185;%;5.5
+Alagoas;Localidade;Total;Estado;Alagoas;AL;2018;0,252;%;5.5
+Sergipe;Localidade;Total;Estado;Sergipe;SE;2018;0,228;%;5.5
+Bahia;Localidade;Total;Estado;Bahia;BA;2018;0,226;%;5.5
+Sudeste;Localidade;Total;Região;;;2018;0,092;%;5.5
+Minas Gerais;Localidade;Total;Estado;Minas Gerais;MG;2018;0,129;%;5.5
+Espírito Santo;Localidade;Total;Estado;Espírito Santo;ES;2018;0,118;%;5.5
+Rio de Janeiro;Localidade;Total;Estado;Rio de Janeiro;RJ;2018;0,077;%;5.5
+São Paulo;Localidade;Total;Estado;São Paulo;SP;2018;0,079;%;5.5
+Sul;Localidade;Total;Região;;;2018;0,103;%;5.5
+Paraná;Localidade;Total;Estado;Paraná;PR;2018;0,127;%;5.5
+Santa Catarina;Localidade;Total;Estado;Santa Catarina;SC;2018;0,082;%;5.5
+Rio Grande do Sul;Localidade;Total;Estado;Rio Grande do Sul;RS;2018;0,093;%;5.5
+Centro-Oeste;Localidade;Total;Região;;;2018;0,122;%;5.5
+Mato Grosso do Sul;Localidade;Total;Estado;Mato Grosso do Sul;MS;2018;0,136;%;5.5
+Mato Grosso;Localidade;Total;Estado;Mato Grosso;MT;2018;0,148;%;5.5
+Goiás;Localidade;Total;Estado;Goiás;GO;2018;0,128;%;5.5
+Distrito Federal;Localidade;Total;Estado;Distrito Federal;DF;2018;0,066;%;5.5
+Brasil;Localidade;Total;Brasil;;;2019;0,131;%;5.5
+Norte;Localidade;Total;Região;;;2019;0,157;%;5.5
+Rondônia;Localidade;Total;Estado;Rondônia;RO;2019;0,147;%;5.5
+Acre;Localidade;Total;Estado;Acre;AC;2019;0,187;%;5.5
+Amazonas;Localidade;Total;Estado;Amazonas;AM;2019;0,116;%;5.5
+Roraima;Localidade;Total;Estado;Roraima;RR;2019;0,102;%;5.5
+Pará;Localidade;Total;Estado;Pará;PA;2019;0,176;%;5.5
+Amapá;Localidade;Total;Estado;Amapá;AP;2019;0,128;%;5.5
+Tocantins;Localidade;Total;Estado;Tocantins;TO;2019;0,185;%;5.5
+Nordeste;Localidade;Total;Região;;;2019;0,217;%;5.5
+Maranhão;Localidade;Total;Estado;Maranhão;MA;2019;0,231;%;5.5
+Piauí;Localidade;Total;Estado;Piauí;PI;2019;0,248;%;5.5
+Ceará;Localidade;Total;Estado;Ceará;CE;2019;0,215;%;5.5
+Rio Grande do Norte;Localidade;Total;Estado;Rio Grande do Norte;RN;2019;0,201;%;5.5
+Paraíba;Localidade;Total;Estado;Paraíba;PB;2019;0,238;%;5.5
+Pernambuco;Localidade;Total;Estado;Pernambuco;PE;2019;0,183;%;5.5
+Alagoas;Localidade;Total;Estado;Alagoas;AL;2019;0,253;%;5.5
+Sergipe;Localidade;Total;Estado;Sergipe;SE;2019;0,212;%;5.5
+Bahia;Localidade;Total;Estado;Bahia;BA;2019;0,217;%;5.5
+Sudeste;Localidade;Total;Região;;;2019;0,088;%;5.5
+Minas Gerais;Localidade;Total;Estado;Minas Gerais;MG;2019;0,128;%;5.5
+Espírito Santo;Localidade;Total;Estado;Espírito Santo;ES;2019;0,112;%;5.5
+Rio de Janeiro;Localidade;Total;Estado;Rio de Janeiro;RJ;2019;0,071;%;5.5
+São Paulo;Localidade;Total;Estado;São Paulo;SP;2019;0,074;%;5.5
+Sul;Localidade;Total;Região;;;2019;0,096;%;5.5
+Paraná;Localidade;Total;Estado;Paraná;PR;2019;0,117;%;5.5
+Santa Catarina;Localidade;Total;Estado;Santa Catarina;SC;2019;0,087;%;5.5
+Rio Grande do Sul;Localidade;Total;Estado;Rio Grande do Sul;RS;2019;0,081;%;5.5
+Centro-Oeste;Localidade;Total;Região;;;2019;0,117;%;5.5
+Mato Grosso do Sul;Localidade;Total;Estado;Mato Grosso do Sul;MS;2019;0,126;%;5.5
+Mato Grosso;Localidade;Total;Estado;Mato Grosso;MT;2019;0,137;%;5.5
+Goiás;Localidade;Total;Estado;Goiás;GO;2019;0,129;%;5.5
+Distrito Federal;Localidade;Total;Estado;Distrito Federal;DF;2019;0,062;%;5.5
+Brasil;Localidade;Total;Brasil;;;2022;0,123;%;5.5
+Norte;Localidade;Total;Região;;;2022;0,144;%;5.5
+Rondônia;Localidade;Total;Estado;Rondônia;RO;2022;0,147;%;5.5
+Acre;Localidade;Total;Estado;Acre;AC;2022;0,163;%;5.5
+Amazonas;Localidade;Total;Estado;Amazonas;AM;2022;0,114;%;5.5
+Roraima;Localidade;Total;Estado;Roraima;RR;2022;0,096;%;5.5
+Pará;Localidade;Total;Estado;Pará;PA;2022;0,16;%;5.5
+Amapá;Localidade;Total;Estado;Amapá;AP;2022;0,114;%;5.5
+Tocantins;Localidade;Total;Estado;Tocantins;TO;2022;0,154;%;5.5
+Nordeste;Localidade;Total;Região;;;2022;0,199;%;5.5
+Maranhão;Localidade;Total;Estado;Maranhão;MA;2022;0,2;%;5.5
+Piauí;Localidade;Total;Estado;Piauí;PI;2022;0,244;%;5.5
+Ceará;Localidade;Total;Estado;Ceará;CE;2022;0,199;%;5.5
+Rio Grande do Norte;Localidade;Total;Estado;Rio Grande do Norte;RN;2022;0,175;%;5.5
+Paraíba;Localidade;Total;Estado;Paraíba;PB;2022;0,228;%;5.5
+Pernambuco;Localidade;Total;Estado;Pernambuco;PE;2022;0,183;%;5.5
+Alagoas;Localidade;Total;Estado;Alagoas;AL;2022;0,217;%;5.5
+Sergipe;Localidade;Total;Estado;Sergipe;SE;2022;0,188;%;5.5
+Bahia;Localidade;Total;Estado;Bahia;BA;2022;0,194;%;5.5
+Sudeste;Localidade;Total;Região;;;2022;0,085;%;5.5
+Minas Gerais;Localidade;Total;Estado;Minas Gerais;MG;2022;0,119;%;5.5
+Espírito Santo;Localidade;Total;Estado;Espírito Santo;ES;2022;0,112;%;5.5
+Rio de Janeiro;Localidade;Total;Estado;Rio de Janeiro;RJ;2022;0,073;%;5.5
+São Paulo;Localidade;Total;Estado;São Paulo;SP;2022;0,072;%;5.5
+Sul;Localidade;Total;Região;;;2022;0,094;%;5.5
+Paraná;Localidade;Total;Estado;Paraná;PR;2022;0,115;%;5.5
+Santa Catarina;Localidade;Total;Estado;Santa Catarina;SC;2022;0,085;%;5.5
+Rio Grande do Sul;Localidade;Total;Estado;Rio Grande do Sul;RS;2022;0,08;%;5.5
+Centro-Oeste;Localidade;Total;Região;;;2022;0,105;%;5.5
+Mato Grosso do Sul;Localidade;Total;Estado;Mato Grosso do Sul;MS;2022;0,111;%;5.5
+Mato Grosso;Localidade;Total;Estado;Mato Grosso;MT;2022;0,131;%;5.5
+Goiás;Localidade;Total;Estado;Goiás;GO;2022;0,114;%;5.5
+Distrito Federal;Localidade;Total;Estado;Distrito Federal;DF;2022;0,052;%;5.5
+Brasil;Localidade;Total;Brasil;;;2023;0,123;%;5.5
+Norte;Localidade;Total;Região;;;2023;0,144;%;5.5
+Rondônia;Localidade;Total;Estado;Rondônia;RO;2023;0,166;%;5.5
+Acre;Localidade;Total;Estado;Acre;AC;2023;0,192;%;5.5
+Amazonas;Localidade;Total;Estado;Amazonas;AM;2023;0,11;%;5.5
+Roraima;Localidade;Total;Estado;Roraima;RR;2023;0,096;%;5.5
+Pará;Localidade;Total;Estado;Pará;PA;2023;0,155;%;5.5
+Amapá;Localidade;Total;Estado;Amapá;AP;2023;0,103;%;5.5
+Tocantins;Localidade;Total;Estado;Tocantins;TO;2023;0,157;%;5.5
+Nordeste;Localidade;Total;Região;;;2023;0,194;%;5.5
+Maranhão;Localidade;Total;Estado;Maranhão;MA;2023;0,201;%;5.5
+Piauí;Localidade;Total;Estado;Piauí;PI;2023;0,227;%;5.5
+Ceará;Localidade;Total;Estado;Ceará;CE;2023;0,194;%;5.5
+Rio Grande do Norte;Localidade;Total;Estado;Rio Grande do Norte;RN;2023;0,172;%;5.5
+Paraíba;Localidade;Total;Estado;Paraíba;PB;2023;0,216;%;5.5
+Pernambuco;Localidade;Total;Estado;Pernambuco;PE;2023;0,17;%;5.5
+Alagoas;Localidade;Total;Estado;Alagoas;AL;2023;0,211;%;5.5
+Sergipe;Localidade;Total;Estado;Sergipe;SE;2023;0,189;%;5.5
+Bahia;Localidade;Total;Estado;Bahia;BA;2023;0,196;%;5.5
+Sudeste;Localidade;Total;Região;;;2023;0,087;%;5.5
+Minas Gerais;Localidade;Total;Estado;Minas Gerais;MG;2023;0,117;%;5.5
+Espírito Santo;Localidade;Total;Estado;Espírito Santo;ES;2023;0,113;%;5.5
+Rio de Janeiro;Localidade;Total;Estado;Rio de Janeiro;RJ;2023;0,069;%;5.5
+São Paulo;Localidade;Total;Estado;São Paulo;SP;2023;0,079;%;5.5
+Sul;Localidade;Total;Região;;;2023;0,097;%;5.5
+Paraná;Localidade;Total;Estado;Paraná;PR;2023;0,119;%;5.5
+Santa Catarina;Localidade;Total;Estado;Santa Catarina;SC;2023;0,085;%;5.5
+Rio Grande do Sul;Localidade;Total;Estado;Rio Grande do Sul;RS;2023;0,083;%;5.5
+Centro-Oeste;Localidade;Total;Região;;;2023;0,101;%;5.5
+Mato Grosso do Sul;Localidade;Total;Estado;Mato Grosso do Sul;MS;2023;0,108;%;5.5
+Mato Grosso;Localidade;Total;Estado;Mato Grosso;MT;2023;0,132;%;5.5
+Goiás;Localidade;Total;Estado;Goiás;GO;2023;0,106;%;5.5
+Distrito Federal;Localidade;Total;Estado;Distrito Federal;DF;2023;0,047;%;5.5
+Brasil;Localidade;Total;Brasil;;;2020;;%;5.5
+Norte;Localidade;Total;Região;;;2020;;%;5.5
+Rondônia;Localidade;Total;Estado;Rondônia;RO;2020;;%;5.5
+Acre;Localidade;Total;Estado;Acre;AC;2020;;%;5.5
+Amazonas;Localidade;Total;Estado;Amazonas;AM;2020;;%;5.5
+Roraima;Localidade;Total;Estado;Roraima;RR;2020;;%;5.5
+Pará;Localidade;Total;Estado;Pará;PA;2020;;%;5.5
+Amapá;Localidade;Total;Estado;Amapá;AP;2020;;%;5.5
+Tocantins;Localidade;Total;Estado;Tocantins;TO;2020;;%;5.5
+Nordeste;Localidade;Total;Região;;;2020;;%;5.5
+Maranhão;Localidade;Total;Estado;Maranhão;MA;2020;;%;5.5
+Piauí;Localidade;Total;Estado;Piauí;PI;2020;;%;5.5
+Ceará;Localidade;Total;Estado;Ceará;CE;2020;;%;5.5
+Rio Grande do Norte;Localidade;Total;Estado;Rio Grande do Norte;RN;2020;;%;5.5
+Paraíba;Localidade;Total;Estado;Paraíba;PB;2020;;%;5.5
+Pernambuco;Localidade;Total;Estado;Pernambuco;PE;2020;;%;5.5
+Alagoas;Localidade;Total;Estado;Alagoas;AL;2020;;%;5.5
+Sergipe;Localidade;Total;Estado;Sergipe;SE;2020;;%;5.5
+Bahia;Localidade;Total;Estado;Bahia;BA;2020;;%;5.5
+Sudeste;Localidade;Total;Região;;;2020;;%;5.5
+Minas Gerais;Localidade;Total;Estado;Minas Gerais;MG;2020;;%;5.5
+Espírito Santo;Localidade;Total;Estado;Espírito Santo;ES;2020;;%;5.5
+Rio de Janeiro;Localidade;Total;Estado;Rio de Janeiro;RJ;2020;;%;5.5
+São Paulo;Localidade;Total;Estado;São Paulo;SP;2020;;%;5.5
+Sul;Localidade;Total;Região;;;2020;;%;5.5
+Paraná;Localidade;Total;Estado;Paraná;PR;2020;;%;5.5
+Santa Catarina;Localidade;Total;Estado;Santa Catarina;SC;2020;;%;5.5
+Rio Grande do Sul;Localidade;Total;Estado;Rio Grande do Sul;RS;2020;;%;5.5
+Centro-Oeste;Localidade;Total;Região;;;2020;;%;5.5
+Mato Grosso do Sul;Localidade;Total;Estado;Mato Grosso do Sul;MS;2020;;%;5.5
+Mato Grosso;Localidade;Total;Estado;Mato Grosso;MT;2020;;%;5.5
+Goiás;Localidade;Total;Estado;Goiás;GO;2020;;%;5.5
+Distrito Federal;Localidade;Total;Estado;Distrito Federal;DF;2020;;%;5.5
+Brasil;Localidade;Total;Brasil;;;2021;;%;5.5
+Norte;Localidade;Total;Região;;;2021;;%;5.5
+Rondônia;Localidade;Total;Estado;Rondônia;RO;2021;;%;5.5
+Acre;Localidade;Total;Estado;Acre;AC;2021;;%;5.5
+Amazonas;Localidade;Total;Estado;Amazonas;AM;2021;;%;5.5
+Roraima;Localidade;Total;Estado;Roraima;RR;2021;;%;5.5
+Pará;Localidade;Total;Estado;Pará;PA;2021;;%;5.5
+Amapá;Localidade;Total;Estado;Amapá;AP;2021;;%;5.5
+Tocantins;Localidade;Total;Estado;Tocantins;TO;2021;;%;5.5
+Nordeste;Localidade;Total;Região;;;2021;;%;5.5
+Maranhão;Localidade;Total;Estado;Maranhão;MA;2021;;%;5.5
+Piauí;Localidade;Total;Estado;Piauí;PI;2021;;%;5.5
+Ceará;Localidade;Total;Estado;Ceará;CE;2021;;%;5.5
+Rio Grande do Norte;Localidade;Total;Estado;Rio Grande do Norte;RN;2021;;%;5.5
+Paraíba;Localidade;Total;Estado;Paraíba;PB;2021;;%;5.5
+Pernambuco;Localidade;Total;Estado;Pernambuco;PE;2021;;%;5.5
+Alagoas;Localidade;Total;Estado;Alagoas;AL;2021;;%;5.5
+Sergipe;Localidade;Total;Estado;Sergipe;SE;2021;;%;5.5
+Bahia;Localidade;Total;Estado;Bahia;BA;2021;;%;5.5
+Sudeste;Localidade;Total;Região;;;2021;;%;5.5
+Minas Gerais;Localidade;Total;Estado;Minas Gerais;MG;2021;;%;5.5
+Espírito Santo;Localidade;Total;Estado;Espírito Santo;ES;2021;;%;5.5
+Rio de Janeiro;Localidade;Total;Estado;Rio de Janeiro;RJ;2021;;%;5.5
+São Paulo;Localidade;Total;Estado;São Paulo;SP;2021;;%;5.5
+Sul;Localidade;Total;Região;;;2021;;%;5.5
+Paraná;Localidade;Total;Estado;Paraná;PR;2021;;%;5.5
+Santa Catarina;Localidade;Total;Estado;Santa Catarina;SC;2021;;%;5.5
+Rio Grande do Sul;Localidade;Total;Estado;Rio Grande do Sul;RS;2021;;%;5.5
+Centro-Oeste;Localidade;Total;Região;;;2021;;%;5.5
+Mato Grosso do Sul;Localidade;Total;Estado;Mato Grosso do Sul;MS;2021;;%;5.5
+Mato Grosso;Localidade;Total;Estado;Mato Grosso;MT;2021;;%;5.5
+Goiás;Localidade;Total;Estado;Goiás;GO;2021;;%;5.5
+Distrito Federal;Localidade;Total;Estado;Distrito Federal;DF;2021;;%;5.5
