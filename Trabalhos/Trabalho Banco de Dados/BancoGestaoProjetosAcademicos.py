@@ -755,7 +755,7 @@ try:
         print(interface)
 
         choice = int(input("Opção: "))
-        if choice < 0 or choice > 13:
+        if choice < 0 or choice > 14:
             print("Erro tente novamente!")
             choice = int(input())
 
